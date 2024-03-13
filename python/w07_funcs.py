@@ -37,7 +37,7 @@ print(y2, "expected: 7")
 
 
 def is_even(n):
-    return n % 2 == 0
+    return (n % 2) == 0
 
 p0 = is_even(12)
 p1 = is_even(11)

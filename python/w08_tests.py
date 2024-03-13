@@ -1,11 +1,10 @@
 def test_1(f, expected, i):
     result = f(i)
     check = (result == expected)
-    if (check):
-        print("testing with ", i, ": ", "✅︎")
-    else:
-        print("testing with ", i, ": ", "❌")
     return check
+
+
+
 
 def test_4(f, expected, i0, i1, i2, i3):
     result = f(i0, i1, i2, i3)

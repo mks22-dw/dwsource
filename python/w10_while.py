@@ -32,6 +32,7 @@ def sum_digs(n):
     while (n != 0):
         dig = n % 10
         sum+= dig
+        print(n, dig, sum)
         n = n // 10
     return sum
 
