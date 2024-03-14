@@ -411,6 +411,51 @@ shift --> ftshi
 Possible solution:
 =======================
 Question 29:
+tify the problem with the code:
+def sum_digs(n):
+    sum = 0 
+    while (n != 0):
+    dig = n % 10
+    sum+= dig
+    print(n dig sum)
+    n = n // 10
+    return sum
+Options:
+a) indent errors
+b) function errors
+c) missing commas
+d) a and c
+Answer
+d)
+
+
+Programming question:
+Write a function called stringValue(s) that computes the difference between the first
+and last values in a given string
+
+Description:
+The function should account for a string made of letters (a - z and A - Z)
+as well as numbers (from 1 - 9). This means if the first and/or last
+value is a letter, the function should encode the letters and return
+the difference. If the first and/or last value is a number, then the
+number should be left alone and not encoded.
+
+Possible solution:
+
+def stringValue (s):
+    part1 = s[0]
+    part2 = s[-1]
+    if ord(part1) >= ord('1') and ord(part1) <= ord('2'):
+        a = part1
+    else:
+        a = ord(part1)    
+    if ord(part2) >= ord('1') and ord(part2) <= ord('2'):
+         b = part2
+    else:
+       b = ord(part2)  
+    return b -
+=======================
+Question 30:
 =====
 Programming question:
 
@@ -418,7 +463,7 @@ Write a function that takes in a string and returns the place of the first lower
 
 Possible solution:
 =======================
-Question 30:
+Question 31:
 =======================
 
 Programming question:
@@ -431,7 +476,7 @@ def volumeCube(s):
     a = s ** 3
     return a
 =======================
-Question 31:
+Question 32:
 =
 Programming question:
 Write a function that would return the sum of the digits in 100! (Euler Question 20)
@@ -439,7 +484,7 @@ Description
 n! = n * (n - 1) * ... * 2 * 1
 Possible solution:
 =======================
-Question 32:
+Question 33:
 =
 Programming question:
 Make a function that returns the reverse of a string.
@@ -456,7 +501,7 @@ def reverse(s):
 
 print (reverse('hello'))
 =======================
-Question 33:
+Question 34:
 h of these will return a number value?
 
 Options:
@@ -474,7 +519,7 @@ Write a function that takes one string as a parameter and returns the character 
 
 Possible Solution:
 =======================
-Question 34:
+Question 35:
 =
 Programming question:
 
@@ -482,7 +527,7 @@ Write a function that takes in a number as a string and returns
 a new list of all the digits greater than five.
 Possible solution:
 =======================
-Question 35:
+Question 36:
 =
 Programming question:
 
@@ -497,7 +542,7 @@ def lowcase(x):
     else:
         return x
 =======================
-Question 36:
+Question 37:
 =
 Programming question:
 Write a function that takes a string of 2 and alphabetizes them. 
@@ -518,7 +563,7 @@ def alphabetize(n):
             string = string + n[index] + n[index]
     return string
 =======================
-Question 37:
+Question 38:
 =
 Programming question:
 
@@ -531,14 +576,14 @@ def concentration (pH):
     return 10 ** (-1 * pH)
 print('concentration of H:', concentration (3), 'M')
 =======================
-Question 38:
+Question 39:
 =
 Programming question:
 Write a function that will return a frowning face if (n) is divisible by (x), and a smiling face if (n) is not divisible by (x).
 
 Possible solution:
 =======================
-Question 39:
+Question 40:
 =
 Programming question:
 
@@ -551,7 +596,7 @@ def concentration (pH):
     return 10 ** (-1 * pH)
 print('concentration of H:', concentration (3), 'M')
 =======================
-Question 40:
+Question 41:
 =
 Programming question:
 
@@ -562,7 +607,7 @@ length.
 
 Possible solution:
 =======================
-Question 41:
+Question 42:
 =
 Programming question:
 
@@ -573,7 +618,7 @@ define volumeCube(s):
     a = s ** 3
     return a
 =======================
-Question 42:
+Question 43:
 =
 Programming question:
 Construct a function med which will return the median value
@@ -607,7 +652,7 @@ def med(a, b, c, d, e, f, g, h):
 
 print(med(2, 3, 4, 5, 6, 4, 1, 7)
 =======================
-Question 43:
+Question 44:
 =
 Programming question:
 
@@ -638,7 +683,7 @@ return d
 print (shift(a))
 print (shift (b)
 =======================
-Question 44:
+Question 45:
 =
 Programming question:
 Write a function that takes a string of 2 and alphabetizes them.
@@ -658,7 +703,7 @@ def alphabetize(n):
         else:
             string = string + n[index] + n[index]
 =======================
-Question 45:
+Question 46:
 =
 Programming question:
 Write a function called stringValue(s) that computes the difference between the first
@@ -686,7 +731,7 @@ def stringValue (s):
        b = ord(part2)  
     return b - a
 =======================
-Question 46:
+Question 47:
 =
 Programming question:
 
@@ -697,7 +742,7 @@ because the fastest path is 1 -> 3 -> 9 -> 8).
 
 Possible solution:
 =======================
-Question 47:
+Question 48:
 =
 Programming question:
 
@@ -707,7 +752,7 @@ ie: was_loved('turtles')==>seltrut was loved
 ie: was_loved('turtle')==>turtle was loved
 Possible solution:
 =======================
-Question 48:
+Question 49:
 ==============================================
 
 Programming question: make a funciton that takes in three inputs,
@@ -720,7 +765,7 @@ Ex: program("hello", "l", "z") -> "hezzo"
 
 possible: solution
 =======================
-Question 49:
+Question 50:
 =
 Programming question:
 
@@ -730,7 +775,7 @@ reverse('hello') -> ('olleh')
 
 Possible solution:
 =======================
-Question 50:
+Question 51:
 =
 Programming question:
 

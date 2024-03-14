@@ -446,6 +446,52 @@ Answer: A) When you have written an if-statement and want to create another cond
 =======================
 Question 29:
 MC Question:
+Identify the problem with the code:
+def sum_digs(n):
+    sum = 0 
+    while (n != 0):
+    dig = n % 10
+    sum+= dig
+    print(n dig sum)
+    n = n // 10
+    return sum
+Options:
+a) indent errors
+b) function errors
+c) missing commas
+d) a and c
+Answer
+d)
+
+
+Programming question:
+Write a function called stringValue(s) that computes the difference between the first
+and last values in a given string
+
+Description:
+The function should account for a string made of letters (a - z and A - Z)
+as well as numbers (from 1 - 9). This means if the first and/or last
+value is a letter, the function should encode the letters and return
+the difference. If the first and/or last value is a number, then the
+number should be left alone and not encoded.
+
+Possible solution:
+
+def stringValue (s):
+    part1 = s[0]
+    part2 = s[-1]
+    if ord(part1) >= ord('1') and ord(part1) <= ord('2'):
+        a = part1
+    else:
+        a = ord(part1)    
+    if ord(part2) >= ord('1') and ord(part2) <= ord('2'):
+         b = part2
+    else:
+       b = ord(part2)  
+    return b -
+=======================
+Question 30:
+MC Question:
 
 In a function with input 's', what would s[4] return when the input is 'python'?
 
@@ -458,7 +504,7 @@ D) o
 
 Answer: D
 =======================
-Question 30:
+Question 31:
 MC Question:
 
 The following command results in an error:
@@ -476,7 +522,7 @@ D) time.time() needs a numerical value within the parenthesis
 
 Answer: B
 =======================
-Question 31:
+Question 32:
 MC Question:
 Which of the following would return the length of a string?
 
@@ -487,7 +533,7 @@ C) length[]
 D) length()
 Answer: B
 =======================
-Question 32:
+Question 33:
 MC Question:
 Which statement is true?
 Options:
@@ -504,7 +550,7 @@ Options:
 Answer
 (A)
 =======================
-Question 33:
+Question 34:
 MC Question:
 Which of these will return a number value?
 
@@ -530,7 +576,7 @@ def answer(a):
     else:
         return a[(len(a)/2)
 =======================
-Question 34:
+Question 35:
 MC Question:
 Question: What is the correct way to define a function that adds two numbers together in Python?
 Options:
@@ -546,7 +592,7 @@ D)def add_numbers(a, b)
 
 Answer: A
 =======================
-Question 35:
+Question 36:
 MC Question: If the cmd ((11 // 2) ** 2) is run, what do you get as your result?
 
 Options:
@@ -557,7 +603,7 @@ D) 36
 
 Answer: C
 =======================
-Question 36:
+Question 37:
 MC Question: What is the error in the function below?
 
 def upcase(letter):
@@ -574,7 +620,7 @@ D: Else is using an unnecessary colon
 
 Answer: B
 =======================
-Question 37:
+Question 38:
 MC Question: Which is the biggest?
 
 Options:
@@ -585,7 +631,7 @@ D) '9'
 
 Answer:B
 =======================
-Question 38:
+Question 39:
 MC Question:
 What is the difference between print and return?
 Options:
@@ -595,7 +641,7 @@ C) return displays the provided parameters when run
 D) return stops the function
 Answer: D
 =======================
-Question 39:
+Question 40:
 MC Question: Which is the biggest?
 
 Options:
@@ -606,7 +652,7 @@ D) '9'
 
 Answer:B
 =======================
-Question 40:
+Question 41:
 MC Question:
 For the following string "i love cats", what is the range of the indexes of the string?
 
@@ -618,7 +664,7 @@ D) 1 to 9
 
 Answer: C
 =======================
-Question 41:
+Question 42:
 MC Question:
 The following command results in an error.
 time.time()
@@ -633,7 +679,7 @@ D) there must be a value in the parentheses before it can work
 Answer
 B
 =======================
-Question 42:
+Question 43:
 '
 MC Question:
 Which of the following python codes will not return
@@ -651,7 +697,7 @@ D. if c == True:
 
 Answer: D
 =======================
-Question 43:
+Question 44:
 MC Question:
 look at the following code and answer the question:
 n = "cat"
@@ -665,7 +711,7 @@ d) none of the responses make a true statement
 Answer
 c
 =======================
-Question 44:
+Question 45:
 MC Question: What is the error in the function below
 
 def upcase(letter):
@@ -682,7 +728,7 @@ D: Else is using an unecessary colon.
 
 Answer: B
 =======================
-Question 45:
+Question 46:
 MC Question: Which of the following is false?
 
 Options:
@@ -694,7 +740,7 @@ d) Chr returns a character based on the encoding provided.
 
 Answer: c
 =======================
-Question 46:
+Question 47:
 MC Question:
 Why does ord('AA') not work?
 
@@ -706,7 +752,7 @@ D) ord expects a character, not a string
 
 Answer: D
 =======================
-Question 47:
+Question 48:
 MC Question:
 what is the difference between if and elif
 
@@ -717,7 +763,7 @@ C) elif allows you to chain conditional checks. While if only is used once.
 D) If can be nested while elif can also be nested.
 : C
 =======================
-Question 48:
+Question 49:
 MC Question: In Python, how could you figure out the length of a
 string 'a' that and return a character based on this length
 
@@ -729,7 +775,7 @@ d. " 'a' "
 
 Answer: B
 =======================
-Question 49:
+Question 50:
 MC Question:
 
 Which of the following is true?
@@ -751,7 +797,7 @@ Answer
 
 A)
 =======================
-Question 50:
+Question 51:
 MC Question: Which is the biggest?
 
 Options:

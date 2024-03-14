@@ -296,6 +296,51 @@ print (shift(a))
 print (shift(b))
 =======================
 Question 29:
+fy the problem with the code:
+def sum_digs(n):
+    sum = 0 
+    while (n != 0):
+    dig = n % 10
+    sum+= dig
+    print(n dig sum)
+    n = n // 10
+    return sum
+Options:
+a) indent errors
+b) function errors
+c) missing commas
+d) a and c
+Answer
+d)
+
+
+Programming question:
+Write a function called stringValue(s) that computes the difference between the first
+and last values in a given string
+
+Description:
+The function should account for a string made of letters (a - z and A - Z)
+as well as numbers (from 1 - 9). This means if the first and/or last
+value is a letter, the function should encode the letters and return
+the difference. If the first and/or last value is a number, then the
+number should be left alone and not encoded.
+
+Possible solution:
+
+def stringValue (s):
+    part1 = s[0]
+    part2 = s[-1]
+    if ord(part1) >= ord('1') and ord(part1) <= ord('2'):
+        a = part1
+    else:
+        a = ord(part1)    
+    if ord(part2) >= ord('1') and ord(part2) <= ord('2'):
+         b = part2
+    else:
+       b = ord(part2)  
+    return b - a
+=======================
+Question 30:
 def firstlower(string):
     found = False
     foundvalue = 0
@@ -309,10 +354,10 @@ def firstlower(string):
 
 print(firstlower('ABcD'))
 =======================
-Question 30:
+Question 31:
 
 =======================
-Question 31:
+Question 32:
 def facDigSum (n):
     result = 1
     while n > 1:
@@ -330,10 +375,10 @@ def facDigSum (n):
         result //= 10
     return digitSum
 =======================
-Question 32:
+Question 33:
 
 =======================
-Question 33:
+Question 34:
 def answer(a):
     if len(a)%2==1:
         x=((len(a)+1)/2)
@@ -341,7 +386,7 @@ def answer(a):
     else:
         return a[(len(a)/2)]
 =======================
-Question 34:
+Question 35:
 def digits_over_5(number):
     listy = ""
     i = 0    
@@ -351,9 +396,6 @@ def digits_over_5(number):
         i+= 1
     return listy
 =======================
-Question 35:
-
-=======================
 Question 36:
 
 =======================
@@ -361,6 +403,9 @@ Question 37:
 
 =======================
 Question 38:
+
+=======================
+Question 39:
 def t_or_f(n, x):
     if (n % x == 0):
         print (":(")
@@ -368,10 +413,10 @@ def t_or_f(n, x):
         print (":)")
 (t_or_f(25, 3))
 =======================
-Question 39:
+Question 40:
 
 =======================
-Question 40:
+Question 41:
 def change_string(original, new):
     n=0
     length = len(original)
@@ -384,10 +429,10 @@ def change_string(original, new):
         
     return answer;
 =======================
-Question 41:
+Question 42:
 
 =======================
-Question 42:
+Question 43:
 Programming question:
 Construct a function med which will return the median value
 from a set of 8 arguments.
@@ -420,7 +465,7 @@ def med(a, b, c, d, e, f, g, h):
 
 print(med(2, 3, 4, 5, 6, 4, 1, 7))
 =======================
-Question 43:
+Question 44:
 Programming question:
 
 Write a function that takes a string representing a word, and rearranges it such that the second half comes before the first.
@@ -450,13 +495,13 @@ return d
 print (shift(a))
 print (shift (b))
 =======================
-Question 44:
-
-=======================
 Question 45:
 
 =======================
 Question 46:
+
+=======================
+Question 47:
 def func(x):
     n = 0
     while x != 1:
@@ -468,7 +513,7 @@ def func(x):
 
 #print(func(8))
 =======================
-Question 47:
+Question 48:
 def was_loved(string):
     if len(string) > 6:
         backwards=''
@@ -483,7 +528,7 @@ print ("was_loved tests:")
 print (was_loved('turtles'))
 print (was_loved('turtle'))
 =======================
-Question 48:
+Question 49:
 def program(a, b, c):
     copy = ""
     current_spot = 0
@@ -496,7 +541,7 @@ def program(a, b, c):
             current_spot += 1
     return copy
 =======================
-Question 49:
+Question 50:
 def reverse(n):
     char = -1
     ans = ""
@@ -507,4 +552,4 @@ def reverse(n):
         
 print(reverse('hello'))
 =======================
-Question 50:
+Question 51:
