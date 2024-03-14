@@ -1,0 +1,510 @@
+
+=======================
+Question 0:
+def lcm(a, b, c):
+  d=1
+  done=True
+  while done:
+    if not (d%a == 0):
+      d+=1
+    elif not (d%c == 0):
+      d+=1
+    elif not (d%b == 0):
+      d+=1
+    else:
+      done = False
+  print (d)
+=======================
+Question 1:
+
+=======================
+Question 2:
+def sum(n):
+    result = (n // 100) + (n % 10)
+    return result
+=======================
+Question 3:
+Programming question: Write a function that adds up the alphabetical values of the letters in a string
+
+Description: (a = 0, z = 26, NOT the ASCII characters. This includes both capitals and minuscule but ignores non-alphabetical characters. 
+
+Possible solution:
+
+def alphabetOrder(s):
+    n = 0 
+    sum = 0
+    while (n < len(s)):
+        if (s[n] >= 'a' and s[n] <= 'z'):
+            num = ord(s[n]) - (ord('a') - 1)
+            sum = sum + num
+        elif (s[n] >= 'A' and s[n] <= 'Z'):
+            num = ord(s[n]) - (ord('A') - 1)
+            sum = sum + num
+        n += 1
+    return sum
+
+'''
+=======================
+Question 4:
+def no_a(s):
+    i = 0
+    new = ''
+    while (i < len(s)):
+        if (s[i] != 'a'):
+            new += s[i]
+            i += 1
+        else:
+            i += 1
+    return new
+=======================
+Question 5:
+
+=======================
+Question 6:
+def abc_order(w):
+    n = 0
+    new = ''
+    while n < len(w):
+        w[n] 
+        n+=1
+=======================
+Question 7:
+def thirdDig(n):
+    if n//10 < 10:
+        return "none"
+    while n//10 >= 100:
+        n = n//10
+    return n%10
+=======================
+Question 8:
+def string_sum (string):
+    n = 0
+    sum = 0
+    while n < len(string):
+        sum += ord(string[n])
+        n += 1
+    return sum
+=======================
+Question 9:
+==============================
+
+Question 2:
+Write a Python function called compute_average that calculates the average of three numbers.
+The function should take three parameters, num1, num2, and num3, and return the average of those three parameters.
+
+Answer: 
+
+def compute_average(num1, num2, num3):
+  total = num1 + num2 + num3
+    average = total / 3
+    return average
+=======================
+Question 10:
+
+=======================
+Question 11:
+def flipString(x):
+    nStr = ''
+    i = len(x) - 1
+    while (i >= 0):
+        nStr += x[i]
+        i -= 1
+    return nStr
+
+print(flipString("abcde"))
+=======================
+Question 12:
+
+=======================
+Question 13:
+def sum(n):
+    result = (n // 100) + (n % 10)
+    return result
+=======================
+Question 14:
+
+=======================
+Question 15:
+= ‘cerulean’, what command would you use to output the letter ‘a’?
+#A. e[6]
+#B. find[e] = a
+#C. e(num) = 6
+#D. str(e) with an output of 6
+
+#Correct Answer A
+
+
+#Write a program that takes in two strings and outputs their combined length.
+def lengthy (a, b):
+    str(a, b)
+    x = (a + b)
+    return len(x)
+=======================
+Question 16:
+def countDown (n):
+    while n > 0:
+        n -= 1
+        print(n)
+countDown(20)
+=======================
+Question 17:
+
+=======================
+Question 18:
+def exclamFunc(string):
+    n = 0
+    totalChars = len(string)
+    newString = ''
+    while (n < totalChars):
+        if (string[n] == '?'):
+            newString += '!'
+        else:
+            newString += string[n]
+        n += 1
+    return newString
+=======================
+Question 19:
+def gcf(m,n):
+    if n>m:
+        s=m
+        m=n
+        n=s
+    guess=n
+    while guess>1:
+=======================
+Question 20:
+def flipString(x):
+    nStr=''
+    i = len(x) - 1
+    while (i>=0):
+        nStr += x[i]
+        i -= 1
+    return nStr
+
+print(flipString("abcde"))
+=======================
+Question 21:
+def nameconnector(a, b, c):
+    aw = a[0]
+    bw = b[0]
+    cw = c[0]
+    e = ''
+    y = 3
+    while y > 0:
+        if aw > bw:
+            if aw > cw:
+                e = a + e
+                aw = chr(0)
+            else:
+                e = c + e
+                cw = chr(0)
+        elif bw > cw:
+            e = b + e
+            bw = chr(0)
+        else:
+            e = c + e
+            cw = chr(0)
+        y = y - 1
+    return e
+
+print (nameconnector('Dyver', 'Sush', 'Art'))
+=======================
+Question 22:
+
+=======================
+Question 23:
+
+=======================
+Question 24:
+def upcase(char):
+    if('a' <= char and char <= 'z'):
+        return chr(ord(char) - ord('a') + ord('A'))
+    return char
+
+def reverseSearch(s, f):
+    i = 0
+    while(i < len(s)):
+        if(upcase(s[i]) = upcase(f[-2])):
+            return i
+        i += 1
+    return -1
+=======================
+Question 25:
+def name_connector(a, b, c):
+    y = a + b + c
+    return y
+print(def name_connector('Sush', 'Art', 'Dyver'))
+=======================
+Question 26:
+def mountainRange(string):
+    letterDifference = ord('a') - ord('A')
+    letter = 0
+    maxLetter = len(string) - 1
+    mountain = ''
+    
+    while letter <= maxLetter:
+        
+        if letter % 2 == 0:
+            mountain += chr(ord(string[letter]) - letterDifference)
+        else:
+            mountain += string[letter]
+        
+        letter += 1
+        
+    return mountain
+=======================
+Question 27:
+a = "birthday"
+b = "shift"
+def shift(n):
+    if len(n) % 2 == 0:
+        c = int(.5 * len(n))
+    else:
+        c = int(.5 * len(n) + .5)
+    d = ""
+    while c >= (.5 * len(n)) and c < len(n):
+        d += n[c]
+        c += 1
+    c = 0
+    while c < (.5 * len(n)):
+        d += n[c]
+        c += 1
+    return d
+
+print (shift(a))
+print (shift(b))
+=======================
+Question 28:
+a = "birthday"
+b = "shift"
+def shift(n):
+    if len(n) % 2 == 0:
+        c = int(.5 * len(n))
+    else:
+        c = int(.5 * len(n) + .5)
+    d = ""
+    while c >= (.5 * len(n)) and c < len(n):
+        d += n[c]
+        c += 1
+    c = 0
+    while c < (.5 * len(n)):
+        d += n[c]
+        c += 1
+    return d
+
+print (shift(a))
+print (shift(b))
+=======================
+Question 29:
+def firstlower(string):
+    found = False
+    foundvalue = 0
+    current = 0
+    while current < len(string) and not found:
+        if string[current] >= 'a' and string[current] <= 'z':
+            found = True
+            foundvalue = current + 1
+        current += 1
+    return current
+
+print(firstlower('ABcD'))
+=======================
+Question 30:
+
+=======================
+Question 31:
+def facDigSum (n):
+    result = 1
+    while n > 1:
+        result *= n
+        n -= 1
+    digitSum = 0
+    # Initialize sum
+    # Keep dividing the number by 10 until it becomes 0
+    while result > 0:
+        # Extract the last digit of the number using modulo operator
+        digit = result % 10
+        # Add the extracted digit to the sum
+        digitSum += digit
+        # Remove the last digit from the number
+        result //= 10
+    return digitSum
+=======================
+Question 32:
+
+=======================
+Question 33:
+def answer(a):
+    if len(a)%2==1:
+        x=((len(a)+1)/2)
+        return a[((len(a)+1)/2)]
+    else:
+        return a[(len(a)/2)]
+=======================
+Question 34:
+def digits_over_5(number):
+    listy = ""
+    i = 0    
+    while i < len(number):
+        if number[i] > "5":
+            listy+= number[i]
+        i+= 1
+    return listy
+=======================
+Question 35:
+
+=======================
+Question 36:
+
+=======================
+Question 37:
+
+=======================
+Question 38:
+def t_or_f(n, x):
+    if (n % x == 0):
+        print (":(")
+    else:
+        print (":)")
+(t_or_f(25, 3))
+=======================
+Question 39:
+
+=======================
+Question 40:
+def change_string(original, new):
+    n=0
+    length = len(original)
+    answer = 0
+    
+    while(n<length):
+        if(original[n] != new[n]):
+            answer+=1
+        n+=1
+        
+    return answer;
+=======================
+Question 41:
+
+=======================
+Question 42:
+Programming question:
+Construct a function med which will return the median value
+from a set of 8 arguments.
+Sample input:
+print(med(2, 3, 4, 5, 6, 4, 1, 7)) -> 4.5
+
+Possible solution:
+'''
+def med(a, b, c, d, e, f, g, h):
+    minofn = min(a, b, c, d, e, f, g, h)
+    maxofn = max(a, b, c, d, e, f, g, h)
+    p2 = str(a)
+    q = str(b)
+    s = str(c)
+    t = str(d)
+    u = str(e)
+    v = str(f)
+    w = str(g)
+    x = str(h)
+    p = p2 + q + s + t + u + v + w +x
+    while len(p) > 2:
+        if p[c] == minofn:
+            p.remove(p[c])
+        elif p[c] == maxofn:
+            p.remove(p[c])
+    term1 = int(p[0])
+    term2 = int(p[1])
+    r = (term1 + term2) / 2
+    return r
+
+print(med(2, 3, 4, 5, 6, 4, 1, 7))
+=======================
+Question 43:
+Programming question:
+
+Write a function that takes a string representing a word, and rearranges it such that the second half comes before the first.
+
+Examples:
+birthday -> hdaybirt 
+shift -> ftshi
+Possible solution:
+======================
+a = "birthday"
+b = "shift"
+def shift(n):
+if len(n) % 2 == 0:
+c = int(.5 * len(n))
+else:
+c = int(.5 * len(n) + 5)
+d = ""
+while c >= (.5 * len(n)) and c < len(n):
+d
++= n[c]
+c += 1
+C = 0
+while c < (.5 * len(n)) :
+d += n[c]
+c += 1
+return d
+print (shift(a))
+print (shift (b))
+=======================
+Question 44:
+
+=======================
+Question 45:
+
+=======================
+Question 46:
+def func(x):
+    n = 0
+    while x != 1:
+        if x % 3 == 0:
+            x = x // 3
+        else: x = x + 1
+        n = n + 1
+    return n
+
+#print(func(8))
+=======================
+Question 47:
+def was_loved(string):
+    if len(string) > 6:
+        backwards=''
+        i=-1
+        while i >= -len(string):
+            backwards += string[i]
+            i-=1
+        return backwards + " was loved"
+    else:
+        return string + " was loved"
+print ("was_loved tests:")
+print (was_loved('turtles'))
+print (was_loved('turtle'))
+=======================
+Question 48:
+def program(a, b, c):
+    copy = ""
+    current_spot = 0
+    while current_spot < len(a):
+        if a[current_spot] == b:
+            copy = copy + c
+            current_spot += 1
+        else:
+            copy = copy + a[current_spot]
+            current_spot += 1
+    return copy
+=======================
+Question 49:
+def reverse(n):
+    char = -1
+    ans = ""
+    while char > -(len(n)) -1 :
+        ans+= n[char]
+        char-=1
+    return ans
+        
+print(reverse('hello'))
+=======================
+Question 50:

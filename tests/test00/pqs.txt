@@ -1,0 +1,744 @@
+
+=======================
+Question 0:
+=
+Programming question:
+
+Description
+
+Write a code that finds the least common multiple for three numbers.
+
+Possible solution:
+=======================
+Question 1:
+=
+Programming question:
+Write a function that will return the product of integer multiples of 4 and 7 with in the range [1, limit). 
+Description
+
+Possible solution:
+def crackpop(limit):
+    product = 1
+    n = 1
+    while (n < limit):
+        if (n % 7 == 0) or (n % 4 == 0):
+            product *= n
+        n += 1
+    return product
+
+print('expected: 224,', 'actual:', crackpop(10))
+=======================
+Question 2:
+=
+Programming question: Write a function a 3 digit integer and returns the sum of the hundreds digit and the ones digit
+
+Description: Takes one parameter that is 3 integer
+
+
+Possible solution:
+=======================
+Question 3:
+=
+Programming question: Write a function that adds up the alphabetical values of the letters in a string
+
+Description: (a = 0, z = 26, NOT the ASCII characters. This includes both capitals and minuscule but ignores non-alphabetical characters. 
+
+Possible solution:
+
+def alphabetOrder(s):
+    n = 0 
+    sum = 0
+    while (n < len(s)):
+        if (s[n] >= 'a' and s[n] <= 'z'):
+            num = ord(s[n]) - (ord('a') - 1)
+            sum = sum + num
+        elif (s[n] >= 'A' and s[n] <= 'Z'):
+            num = ord(s[n]) - (ord('A') - 1)
+            sum = sum + num
+        n += 1
+    return sum
+
+''
+=======================
+Question 4:
+=
+Programming question:
+
+Write a function no_a(s) that takes a string and returns the string without the letter 'a'.
+
+Possible solution:
+=======================
+Question 5:
+h one is greater than ord(A), assume all inputs are strings
+
+Options:
+A) ord(a)
+B) ord(ab)
+C) len(a)
+D) len(ab)
+
+Programming question
+Write a function that takes a first and last name and puts Mr. infront of the last name i.e John Doe = Mr Doe
+
+Answer:
+first = ''
+last = ''
+space = s.find(' ')
+i = 0
+while (i < space):
+    first+= s[i]
+    i+= 1
+i+= 1
+while (i < len(s)):
+    last+= s[i]
+    i+= 1
+return  'Mr. ' + last
+=======================
+Question 6:
+=
+Programming question:
+
+Write a function that takes in a string of letters.
+Assume that the letters are all lowercase.
+Return the letters in alphabet order. 
+
+Possible solution:
+=======================
+Question 7:
+=
+
+Programming question:
+
+Write a function that returns the 3rd digit of a number and if the number doesnt have 3 digits then return "none"
+
+Possible solution:
+=======================
+Question 8:
+=
+Programming question:
+
+Write a function that returns the sum of the unicodes of string, a given string. Assume the parameter is given in the following format: 'string'.
+
+Description
+
+Possible solution:
+=======================
+Question 9:
+================================
+
+Question 2:
+Write a Python function called compute_average that calculates the average of three numbers.
+The function should take three parameters, num1, num2, and num3, and return the average of those three parameters.
+
+Answer: 
+
+def compute_average(num1, num2, num3):
+  total = num1 + num2 + num3
+    average = total / 3
+    return averag
+=======================
+Question 10:
+=
+Programming question:
+
+Given 2 strings, named s and f, create a function reverseSearch(s, f)
+to find the index of the first occurence of the second character of reversed f.
+Note: f is guaranteed to have two or more characters
+
+Ex:
+s = "i am string one"
+f = "i am string two"
+reversed f = "owt gnirts ma i" (second character is w)
+
+The function must be case-insensitive (lower/uppercase doesn't matter).
+Hint: You can make a helper function upcase to include in your code.
+
+Test Cases:
+print(reverseSearch("strings are nice", "not really")) ==> -1
+print(reverseSearch("hot chocolate", "cocoa")) ==> 1
+print(reverseSearch(":(@???!!^^", "?!")) ==> 3
+
+Possible solution:
+def upcase(char):
+    if(char >= 'a' and char <= 'z'):
+        diff = ord('a') - ord('A')
+        return chr(ord(char) - diff)
+    return char
+
+def reverseSearch(s, f):
+    upf = upcase(f[-2])
+    i = 0
+    ups = ''
+    while(i < len(s)):
+        ups += upcase(s[i])
+        i += 1
+    return ups.find(upf)
+=======================
+Question 11:
+=
+Programming question:
+
+Write a function that reverses a string. Eg: flipString("abcde") outputs "edcba".
+
+Possible solution:
+=======================
+Question 12:
+=========================
+Programming Question:
+Write a function that takes a single-letter string as input and returns a string that's the same length as the ord of the input.
+
+Description:
+1) There is only one parameter and the parameter will be a single-letter string.
+2) The length of the output should be equal to the parameter's ord value.
+3) The string returned should only be consisted of the inputted letter.
+
+Possible solution:
+def foo(n):
+    s = ord(n)
+    x = 1
+    z = ""
+    while x <= s:
+        z = z + n
+        x = x + 1
+    return z
+=======================
+Question 13:
+=
+Programming question: Write a function a 3 digit integer and returns the sum of the hundreds digit and the ones digit
+
+Description: Takes one parameter that is 3 integer
+
+
+Possible solution:
+=======================
+Question 14:
+c = 'cake' - which of the following would return cakecake
+a. c * 2
+b. c [1]
+c. c + 'brownie'
+d. len (c)
+
+Answer: A
+
+FUNCTION
+
+2. Create the function greater_than that determines if one number is
+greater than another and print the answer as a string.
+
+
+
+Possible answer:
+def greater_than (x, y):
+    a = 200
+    b = 100
+    if b > a:
+      print("b is greater than a")
+    elif a == b:
+      print("a and b are equal")
+    else:
+      print("a is greater than b")
+=======================
+Question 15:
+e = ‘cerulean’, what command would you use to output the letter ‘a’?
+#A. e[6]
+#B. find[e] = a
+#C. e(num) = 6
+#D. str(e) with an output of 6
+
+#Correct Answer A
+
+
+#Write a program that takes in two strings and outputs their combined length.
+def lengthy (a, b):
+    str(a, b)
+    x = (a + b)
+    return len(x
+=======================
+Question 16:
+=
+Programming question: countDown
+
+Description
+Write a function that counts down from a number to 0.
+Possible solution:
+=======================
+Question 17:
+=
+Programming question:
+This function, crackpop, will return crack if an integer from 0 to an integer limit is a multiple of 4, and pop if it is a multiple of 7. If it is a multiple of both, the function will return boom. 
+
+Description
+This function takes one parameter representing an integer limit. 
+
+Possible solution:
+
+def crackpop(limit):
+    product = 1
+    n = 1
+    while (n < limit):
+        if (n % 7 == 0) or (n % 4 == 0):
+            product *= n
+        n += 1
+    print("crackpot boom")
+    return product
+=======================
+Question 18:
+=
+Programming question:
+
+Write a function called exclamFunc that will replace all question marks with a exclamation mark!
+This function should take in a string and should produce a string. If there are no question marks or no punctuation marks, then just return the string. 
+Example: "How's your day?" => "How's your day!"
+
+Possible solution:
+=======================
+Question 19:
+=
+Programming question:
+
+Write a function that find the greatest common factor of two numbers.
+
+Possible solution:
+=======================
+Question 20:
+Programming question:
+
+Write a function that reverses a string. Eg: flipString("abcde") outputs "edcba".
+
+Possible solution:
+=======================
+Question 21:
+=
+Programming question:
+
+Connect and print the following names in alphabetical order:
+Dyver
+Sush
+Art
+
+Assume they are already in strings and don't add spaces or lines between names.
+
+Possible solution:
+=======================
+Question 22:
+=
+Programming question:
+Write a function that returns the 3rd digit of a number
+and if the number doesnt have 3 digits then return "none"
+
+Possible solution:
+def thirdDig(n):
+    if n//10 < 10:
+        return "none"
+    while n//10 >= 100:
+        n = n//10
+    return n%10
+=======================
+Question 23:
+=
+Programming question: Countdowm
+Write a function that counts down from 20
+Description
+Needs a while loop
+Print the answer
+Possible solution:
+
+def countdown():
+    n = 21 #so n can print out 21
+    while n != 0:
+        n += -1
+        print(n)
+=======================
+Question 24:
+=
+Programming question:
+
+(Easy Version)
+Given 2 strings named s and f, create a function
+reverseSearch(s, f) to find the index of the
+first occurence of the second character of reversed f.
+The function should be case-insensitive, you are allowed
+a helper function.
+Possible solution:
+=======================
+Question 25:
+=
+Programming question:
+
+Connect and print the following names. Assume they are inputted as strings. No spaces or new lines between names.
+Sush
+Art
+Dyver
+
+
+Possible solution:
+=======================
+Question 26:
+=
+Programming question:
+
+Write a function 'mountainRange' that takes one string
+parameter and returns the same string but capitalized
+every other letter
+
+Description:
+
+You can assume that the string given will be entirely
+lowercase and not include any spaces or punctuation
+
+The first letter should be uppercase 
+
+Possible solution:
+=======================
+Question 27:
+=
+Programming question:
+Write a function, called shift, which takes a string with a single all lowercase word as an argument and rearranges it such that the letters after the halfway point of the word are moved to the beginning of the word. If the word has an odd number of letters split the word in half rounding up (5 letter word split after 3 letters) and do the same thing.
+Examples:
+birthday --> hdaybirt
+shift --> ftshi
+
+Possible solution:
+=======================
+Question 28:
+=
+Programming question:
+Write a function, called shift, which takes a string with a single all lowercase word as an argument and rearranges it such that the letters after the halfway point of the word are moved to the beginning of the word. If the word has an odd number of letters split the word in half rounding up (5 letter word split after 3 letters) and do the same thing.
+Examples:
+birthday --> hdaybirt
+shift --> ftshi
+
+Possible solution:
+=======================
+Question 29:
+=====
+Programming question:
+
+Write a function that takes in a string and returns the place of the first lowercase letter in the string (starting from 1).
+
+Possible solution:
+=======================
+Question 30:
+=======================
+
+Programming question:
+
+Write a function, volumeCube, that evaluates the volume of a cube given side length, s.
+
+Possible solution:
+
+def volumeCube(s):
+    a = s ** 3
+    return a
+=======================
+Question 31:
+=
+Programming question:
+Write a function that would return the sum of the digits in 100! (Euler Question 20)
+Description
+n! = n * (n - 1) * ... * 2 * 1
+Possible solution:
+=======================
+Question 32:
+=
+Programming question:
+Make a function that returns the reverse of a string.
+Description
+reverse('hello') -> ('elleh')
+Possible solution:
+def reverse(s):
+    n = -1
+    answer = ''
+    while n >= (- (len(s))):
+        answer += s[n]
+        n += -1
+    return answer
+
+print (reverse('hello'))
+=======================
+Question 33:
+h of these will return a number value?
+
+Options:
+A. s[x]
+B. chr(x)
+C. 'x'
+D. ord(x)
+
+Answer:
+D. ord(x)
+
+
+Programming Question:
+Write a function that takes one string as a parameter and returns the character in the middle of that string. If the middle of the string has 2 character then return the character that comes first.
+
+Possible Solution:
+=======================
+Question 34:
+=
+Programming question:
+
+Write a function that takes in a number as a string and returns
+a new list of all the digits greater than five.
+Possible solution:
+=======================
+Question 35:
+=
+Programming question:
+
+Write a function that takes a single string character as an argument and returns the lower case version of it.
+
+Description
+
+Possible solution:
+def lowcase(x):
+    if 'A' <= x <= 'Z':
+        return chr(ord(x) + 32)
+    else:
+        return x
+=======================
+Question 36:
+=
+Programming question:
+Write a function that takes a string of 2 and alphabetizes them. 
+
+Description:
+Compare the first index compared to the second. If the first one is greater,
+then add that to the string first. Otherwise, put the second first
+
+Possible solution:
+def alphabetize(n):
+    index = 0
+    string = ""
+    while index + 1 < len(n):
+        if n[index + 1] < n[index]:
+            string = string + n[index + 1] + n[index]
+            index += 1
+        else:
+            string = string + n[index] + n[index]
+    return string
+=======================
+Question 37:
+=
+Programming question:
+
+Make a function that finds the concetration of hydrogen ions
+based on the pH.
+def concentration(pH)
+
+Possible solution:
+def concentration (pH):
+    return 10 ** (-1 * pH)
+print('concentration of H:', concentration (3), 'M')
+=======================
+Question 38:
+=
+Programming question:
+Write a function that will return a frowning face if (n) is divisible by (x), and a smiling face if (n) is not divisible by (x).
+
+Possible solution:
+=======================
+Question 39:
+=
+Programming question:
+
+Make a function that finds the concetration of hydrogen ions
+based on the pH.
+def concentration(pH)
+
+Possible solution:
+def concentration (pH):
+    return 10 ** (-1 * pH)
+print('concentration of H:', concentration (3), 'M')
+=======================
+Question 40:
+=
+Programming question:
+
+Write a function called change_string that takes in two strings as
+inputs. The function should return the number of different characters
+between the two strings. You may assume that both strings are the same
+length.
+
+Possible solution:
+=======================
+Question 41:
+=
+Programming question:
+
+Description
+Write a function vCube that evaluates the volume of a cube given the side length of s
+Possible solution:
+define volumeCube(s):
+    a = s ** 3
+    return a
+=======================
+Question 42:
+=
+Programming question:
+Construct a function med which will return the median value
+from a set of 8 arguments.
+Sample input:
+print(med(2, 3, 4, 5, 6, 4, 1, 7)) -> 4.5
+
+Possible solution:
+'''
+def med(a, b, c, d, e, f, g, h):
+    minofn = min(a, b, c, d, e, f, g, h)
+    maxofn = max(a, b, c, d, e, f, g, h)
+    p2 = str(a)
+    q = str(b)
+    s = str(c)
+    t = str(d)
+    u = str(e)
+    v = str(f)
+    w = str(g)
+    x = str(h)
+    p = p2 + q + s + t + u + v + w +x
+    while len(p) > 2:
+        if p[c] == minofn:
+            p.remove(p[c])
+        elif p[c] == maxofn:
+            p.remove(p[c])
+    term1 = int(p[0])
+    term2 = int(p[1])
+    r = (term1 + term2) / 2
+    return r
+
+print(med(2, 3, 4, 5, 6, 4, 1, 7)
+=======================
+Question 43:
+=
+Programming question:
+
+Write a function that takes a string representing a word, and rearranges it such that the second half comes before the first.
+
+Examples:
+birthday -> hdaybirt 
+shift -> ftshi
+Possible solution:
+======================
+a = "birthday"
+b = "shift"
+def shift(n):
+if len(n) % 2 == 0:
+c = int(.5 * len(n))
+else:
+c = int(.5 * len(n) + 5)
+d = ""
+while c >= (.5 * len(n)) and c < len(n):
+d
++= n[c]
+c += 1
+C = 0
+while c < (.5 * len(n)) :
+d += n[c]
+c += 1
+return d
+print (shift(a))
+print (shift (b)
+=======================
+Question 44:
+=
+Programming question:
+Write a function that takes a string of 2 and alphabetizes them.
+
+Description:
+Compare the first index compared to the second. If the first one is greater,
+then add that to the string first. Otherwise put the second first.
+
+Possible solution:
+def alphabetize(n):
+    index = 0
+    string = ""
+    while index + 1 < len(n):
+        if n[index + 1] < n[index]:
+            string = string + n[index + 1] + n[index]
+            index += 1
+        else:
+            string = string + n[index] + n[index]
+=======================
+Question 45:
+=
+Programming question:
+Write a function called stringValue(s) that computes the difference between the first
+and last values in a given string
+
+Description:
+The function should account for a string made of letters (a - z and A - Z)
+as well as numbers (from 1 - 9). This means if the first and/or last
+value is a letter, the function should encode the letters and return
+the difference. If the first and/or last value is a number, then the
+number should be left alone and not encoded.
+
+Possible solution:
+
+def stringValue (s):
+    part1 = s[0]
+    part2 = s[-1]
+    if ord(part1) >= ord('1') and ord(part1) <= ord('2'):
+        a = part1
+    else:
+        a = ord(part1)    
+    if ord(part2) >= ord('1') and ord(part2) <= ord('2'):
+         b = part2
+    else:
+       b = ord(part2)  
+    return b - a
+=======================
+Question 46:
+=
+Programming question:
+
+Given a positive integer, output the minimum number operations,
+either multiplying by 3 or subtracting 1, it would take to go from 1
+to the given integer (for example, inputting 8 would output 3
+because the fastest path is 1 -> 3 -> 9 -> 8).
+
+Possible solution:
+=======================
+Question 47:
+=
+Programming question:
+
+Write a function that returns the string and add "was loved" to it
+However if the string has greater than 6 characters it will spelled the name backwards and add "was loved"
+ie: was_loved('turtles')==>seltrut was loved
+ie: was_loved('turtle')==>turtle was loved
+Possible solution:
+=======================
+Question 48:
+==============================================
+
+Programming question: make a funciton that takes in three inputs,
+first being a string, second being an original character, and the third
+being a substitution
+
+Description: the function should make a copy of the list that substitutes
+any occurance of the original character with a substitution
+Ex: program("hello", "l", "z") -> "hezzo"
+
+possible: solution
+=======================
+Question 49:
+=
+Programming question:
+
+Make a function that returns the reverse of the string. 
+
+reverse('hello') -> ('olleh')
+
+Possible solution:
+=======================
+Question 50:
+=
+Programming question:
+
+Make a function that finds the concetration of hydrogen ions
+based on the pH.
+def concentration(pH)
+
+Possible solution:
+def concentration (pH):
+    return 10 ** (-1 * pH)
+print('concentration of H:', concentration (3), 'M')

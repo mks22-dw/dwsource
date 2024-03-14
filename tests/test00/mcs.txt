@@ -1,0 +1,763 @@
+
+=======================
+Question 0:
+MC Question:
+
+How many loops does this program run?
+
+def four(number):
+  while (number < 4):
+    number += 1
+  print (number)
+
+four(2)
+
+Options:
+
+1. 1
+2. 2
+3. 3
+4. 4
+
+Answer: 2
+=======================
+Question 1:
+MC Question:
+In the string 'hello world', what does s[5] return? (s = 'hello world')
+
+Options:
+a)' '
+b)'o'
+c)'h'
+d)'d'
+
+Answer
+a)' '
+=======================
+Question 2:
+MC Question: What is the function for finding an index of something?
+
+Options:
+A) .find()
+B) len(string)
+C) []
+D) str(value)
+Answer: A
+=======================
+Question 3:
+'
+MC Question: From what year does Python record time?
+
+Options:
+A) 1990
+B) 1960
+C) 1970
+D) 2010
+
+Answer: C
+=======================
+Question 4:
+MC Question:
+
+Which of the following is invalid syntax for creating a string?
+Options:
+A) ' '
+B) " "
+C) "" ""
+D) """ """
+
+Answer
+D
+=======================
+Question 5:
+MC Question: Which one is greater than ord(A), assume all inputs are strings
+
+Options:
+A) ord(a)
+B) ord(ab)
+C) len(a)
+D) len(ab)
+
+Programming question
+Write a function that takes a first and last name and puts Mr. infront of the last name i.e John Doe = Mr Doe
+
+Answer:
+first = ''
+last = ''
+space = s.find(' ')
+i = 0
+while (i < space):
+    first+= s[i]
+    i+= 1
+i+= 1
+while (i < len(s)):
+    last+= s[i]
+    i+= 1
+return  'Mr. ' + last
+""
+=======================
+Question 6:
+MC Question:
+?
+
+Options:
+A) 2 mph
+B) 20 mph
+C) 200 mph
+D) African or European?
+
+Answer: D
+=======================
+Question 7:
+MC Question:
+What will be the result of perfect_year(1900) if this is the function:
+
+def perfect_year(year):
+    if (year % 300 == 0):
+        print(year, "is a perfect year!")
+    elif (year % 200 == 0):
+        print(year, "is not a perfect year!")
+    elif (year % 5 == 0):
+        print(year, "is a perfect year!")
+    else:
+        print(year, "is not a perfect year!")
+
+Options:
+A. 1900 is not a perfect year 
+B. 1900 is a perfect year
+C. year is a perfect year
+D. True
+
+Answer: B
+=======================
+Question 8:
+MC Question:
+Which of the following will give you an error given string = 'abcdefghij'?
+Options:
+A) string[10]
+B) string + ' hello'
+C) string.find('z')
+D) ocd (string.[-1])
+
+Answer: A
+=======================
+Question 9:
+Question 1:
+What will be the output of the following Python code snippet?
+
+x = 10
+y = 5
+z = 7
+
+result = (x + y) * z // y
+
+print(result)
+
+
+A) 34
+B) 35
+C) 17
+D) 15
+
+Answer: C) 17
+=======================
+Question 10:
+MC Question:
+Which is a way to return the third character of string s no matter the length?
+Options:
+A) s[2]
+B) s[len(s) - 3]
+C) s[-2]
+D) s[3]
+Answer: A
+=======================
+Question 11:
+MC Question:
+
+What is the input and output of ord(x)?
+
+Options:
+
+A) Input: string, Output: integer
+B) Input: boolean, Output: integer
+C) Input: string, Output: boolean
+D) Input: function, Output: none, prints to console
+
+Answer
+
+A
+=======================
+Question 12:
+MC Questions:
+Given the following function:
+def foo(n):
+    if n < 10:
+        return 'small'
+    elif n == 10:
+        return 'THE SAME!'
+    else:
+        return 'big'
+What is the output of print(foo(212))?
+
+Options:
+1) small
+2) THE SAME!
+3) big
+4) error message
+
+Answer: 3) big
+=======================
+Question 13:
+MC Question: What is the function for finding an index of something?
+
+Options:
+A) .find()
+B) len(string)
+C) []
+D) str(value)
+Answer: A
+=======================
+Question 14:
+MC QUESTION
+
+1. c = 'cake' - which of the following would return cakecake
+a. c * 2
+b. c [1]
+c. c + 'brownie'
+d. len (c)
+
+Answer: A
+
+FUNCTION
+
+2. Create the function greater_than that determines if one number is
+greater than another and print the answer as a string.
+
+
+
+Possible answer:
+def greater_than (x, y):
+    a = 200
+    b = 100
+    if b > a:
+      print("b is greater than a")
+    elif a == b:
+      print("a and b are equal")
+    else:
+      print("a is greater than b")
+""
+=======================
+Question 15:
+f you were to type e = ‘cerulean’, what command would you use to output the letter ‘a’?
+#A. e[6]
+#B. find[e] = a
+#C. e(num) = 6
+#D. str(e) with an output of 6
+
+#Correct Answer A
+
+
+#Write a program that takes in two strings and outputs their combined length.
+def lengthy (a, b):
+    str(a, b)
+    x = (a + b)
+    return len(x
+=======================
+Question 16:
+MC Question:
+What will this program return?
+def bigger15 (n):
+    if n > 15:
+        print(n," is bigger than 15!")
+    else:
+        print(n, "is not bigger than 15")
+bigger15(16)
+
+Options:
+A) nothing
+B) n is bigger than 15
+C) 16 is bigger than 15
+D) 16 is not bigger than 15
+Answer
+C
+=======================
+Question 17:
+MC Question:
+In the string 'hello world' what does s[5] return? (s = 'hello world')
+
+Options:
+a) ' '
+b) 'o'
+c) 'h'
+d) 'd'
+
+Answer
+a) ' '
+=======================
+Question 18:
+MC Question:
+What does concatenation mean?
+
+Options:
+A) the combining or two or more integers
+B) the combining of two or more booleans
+C) the combining of two or more strings
+D) all of the above
+
+Answer: C
+=======================
+Question 19:
+MC Question:
+What is a correct use of an elif conditional?
+
+Options:
+A) elif:
+       i+=1
+B) elif (i+=1)
+C) elif (i=1):
+       i+=1
+D)elif i=1:
+       i+=1
+E) More than one of the above options is correct.
+
+Answer: E
+=======================
+Question 20:
+MC Question:
+Which of the following returns a floating point number?
+
+Options:
+A) 6 * 3 % 10
+B) 6 // 3 + 10
+C) 6 - 3 ** 10
+D) 6 / 3 - 10
+
+Answer: D
+=======================
+Question 21:
+MC Question: How do you connect 2 strings?
+
+Options:
+A) +
+B) -
+C) ++
+D) --
+
+Answer: A
+=======================
+Question 22:
+MC Question:
+What will be the result of subby (173) if this is the function:
+
+def subby (n):
+    sum = 0
+    while (n != 0):
+        sum = sum + (n % 10)
+        n = n //10
+    return sum
+
+Options:
+A. 10
+B. 11
+C. 13
+D. 21
+
+Answer: B
+=======================
+Question 23:
+MC Question: 
+What will this function return?
+def bigger15(n):
+  if n > 15
+    print(n, " is bigger than 15!")
+  else:
+    print(n, "is not bigger than 15!")
+
+Options:
+A) nothing
+B) n is bigger than 15
+C) 16 is bigger than 15
+D) 16 is smaller than 15
+
+Answer
+C)
+=======================
+Question 24:
+MC Question:
+Which is a way to return the third character of a string?
+
+Options:
+a) s[2]
+b) s[len(s) - 3]
+c) s[-3]
+d) s[3]
+
+Answer: A
+=======================
+Question 25:
+MC Question: How do you concatenate 2 strings? 
+
+Options:
+A. +
+B. -
+C. ++
+D. --
+
+Answer: A
+=======================
+Question 26:
+MC Question:
+What is index number of the last letter in the word
+"banana?"
+
+Options:
+A) 6
+B) len('banana')
+C) len('banana') - 1
+D) 'banana'[5]
+
+Answer:
+C
+=======================
+Question 27:
+MC Question:
+
+When do you use elif?
+
+Options:
+
+A) When you have written an if statement and you want another conditonal statement related to the first one
+B) You can write it on its own as a conditional
+C) It can be used instead of while
+D) It is a variable
+
+Answer
+A
+=======================
+Question 28:
+MC Question: When you do use elif
+
+Options:
+A) When you have written an if-statement and want to create another conditional statement related to the first.
+B) It can be used on its on as an conditonal statement.
+C) It can be used instead of while.
+D) It is a variable
+Answer: A) When you have written an if-statement and want to create another conditional statement related to the first.
+=======================
+Question 29:
+MC Question:
+
+In a function with input 's', what would s[4] return when the input is 'python'?
+
+Options:
+
+A) -1
+B) t
+C) h
+D) o
+
+Answer: D
+=======================
+Question 30:
+MC Question:
+
+The following command results in an error:
+
+Python 3/10/12 (/usr/bin/python3)
+>>>time.time()
+
+How would you fix the code?
+
+Options:
+A) Include variables that indicate start and end time
+B) Begin the shell with import time
+C) time.time() should be a string
+D) time.time() needs a numerical value within the parenthesis
+
+Answer: B
+=======================
+Question 31:
+MC Question:
+Which of the following would return the length of a string?
+
+Options:
+A) len[]
+B) len()
+C) length[]
+D) length()
+Answer: B
+=======================
+Question 32:
+MC Question:
+Which statement is true?
+Options:
+(A) ord('X') < ord('f')
+(B) def foo(n):
+        n = chr(ord('c'))
+        if n < 'A':
+            return 5
+        else:
+            return 9
+    foo('y') returns 5
+(C) (1 + 2) == 4 returns true
+(D) len('hello') == 20 returns true
+Answer
+(A)
+=======================
+Question 33:
+MC Question:
+Which of these will return a number value?
+
+Options:
+A. s[x]
+B. chr(x)
+C. 'x'
+D. ord(x)
+
+Answer:
+D. ord(x)
+
+
+Programming Question:
+Write a function that takes one string as a parameter and returns the character in the middle of that string. If the middle of the string has 2 character then return the character that comes first.
+
+Possible Solution:
+"""
+def answer(a):
+    if len(a)%2==1:
+        x=((len(a)+1)/2)
+        return a[((len(a)+1)/2)]
+    else:
+        return a[(len(a)/2)
+=======================
+Question 34:
+MC Question:
+Question: What is the correct way to define a function that adds two numbers together in Python?
+Options:
+
+A)def add_numbers(a, b):
+    return a + b
+B)function add_numbers(a, b):
+    return a + b
+C)def add_numbers(a, b)
+    return a + b
+D)def add_numbers(a, b)
+    a + b
+
+Answer: A
+=======================
+Question 35:
+MC Question: If the cmd ((11 // 2) ** 2) is run, what do you get as your result?
+
+Options:
+A) 3
+B) 4
+C) 25
+D) 36
+
+Answer: C
+=======================
+Question 36:
+MC Question: What is the error in the function below?
+
+def upcase(letter):
+    if letter > 'Z':
+        return chr(ord(letter - 32)
+    else:
+        return letter
+Options:
+
+A: None of the below
+B: An extra parentheses is needed in the third line.
+C: An indentation is missing in the third line.
+D: Else is using an unnecessary colon
+
+Answer: B
+=======================
+Question 37:
+MC Question: Which is the biggest?
+
+Options:
+A) 'Z'
+B) 'a'
+C) '10000000'
+D) '9'
+
+Answer:B
+=======================
+Question 38:
+MC Question:
+What is the difference between print and return?
+Options:
+A) print returns a value
+B) print displays a random string
+C) return displays the provided parameters when run
+D) return stops the function
+Answer: D
+=======================
+Question 39:
+MC Question: Which is the biggest?
+
+Options:
+A) 'Z'
+B) 'a'
+C) '10000000'
+D) '9'
+
+Answer:B
+=======================
+Question 40:
+MC Question:
+For the following string "i love cats", what is the range of the indexes of the string?
+
+Options:
+A) 1 to 11
+B) 0 to 8
+C) 0 to 10
+D) 1 to 9
+
+Answer: C
+=======================
+Question 41:
+MC Question:
+The following command results in an error.
+time.time()
+What is missing?
+
+Options:
+A) Include variables indicating the start time and end time
+B) Import time
+C) It should be a string
+D) there must be a value in the parentheses before it can work
+
+Answer
+B
+=======================
+Question 42:
+'
+MC Question:
+Which of the following python codes will not return
+an error?
+
+Options:
+A. if c = true:
+       p = 2
+B. if c == true:
+       p == 2
+C. if c == True:
+       p == False
+D. if c == True:
+       p = False
+
+Answer: D
+=======================
+Question 43:
+MC Question:
+look at the following code and answer the question:
+n = "cat"
+n = "smile"
+Which statement about this code is true?
+Options:
+a) the code is invalid because strings are immutable
+b) the code is invalid because a variable can have only one definition
+c) the code is valid because the variable changes but not the string itself
+d) none of the responses make a true statement   
+Answer
+c
+=======================
+Question 44:
+MC Question: What is the error in the function below
+
+def upcase(letter):
+    if letter > 'Z':
+        return chr(ord(letter - 32)
+    else:
+        return letter
+
+Options:
+A: None of the below.
+B: An extra parentheses is needed in the third line.
+C: An indentation is missing in the third line.
+D: Else is using an unecessary colon.
+
+Answer: B
+=======================
+Question 45:
+MC Question: Which of the following is false?
+
+Options:
+a) The elif statement is used when coding more than one if statements
+b) The elif statement goes before an else statement and
+above an if statement
+c) A -1 index refers to the start of a string
+d) Chr returns a character based on the encoding provided.
+
+Answer: c
+=======================
+Question 46:
+MC Question:
+Why does ord('AA') not work?
+
+Options:
+A) ord expects an integer value from 1 to 127
+B) ord expects an integer value from 1 to 2^21
+C) the combined value of 'A' and 'A' together is outside of the range of ord
+D) ord expects a character, not a string
+
+Answer: D
+=======================
+Question 47:
+MC Question:
+what is the difference between if and elif
+
+Options:
+A) Cooporate they are the same picture.
+B) elif is not a thing.
+C) elif allows you to chain conditional checks. While if only is used once.  
+D) If can be nested while elif can also be nested.
+: C
+=======================
+Question 48:
+MC Question: In Python, how could you figure out the length of a
+string 'a' that and return a character based on this length
+
+Options:
+a. len('a')
+b. chr(len('a'))
+c. len(chr('a'))
+d. " 'a' "
+
+Answer: B
+=======================
+Question 49:
+MC Question:
+
+Which of the following is true?
+
+Options
+A) ord('X') < ord('f')
+B) def food(n):
+        n = chr(ord('c'))
+        if n < 'A':
+            return 5
+        else:
+            return 9
+    
+    foo('y') returns 9
+C) (1+2) == 4 returns true
+D) len('hello') == 20 returns true 
+
+Answer
+
+A)
+=======================
+Question 50:
+MC Question: Which is the biggest?
+
+Options:
+A) 'Z'
+B) 'a'
+C) '10000000'
+D) '9'
+
+Answer:B
