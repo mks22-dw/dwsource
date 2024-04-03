@@ -1,0 +1,808 @@
+
+=======================
+Question 0:
+by: 09/abraham.max:
+
+MC Question:
+Which of the following creates a list.
+Options:
+1. while
+2. for _ in _
+3. map
+4. ord
+Answer
+3. map
+=======================
+Question 1:
+by: 09/aranda.eleanor:
+
+MC Question:
+What is the correct syntax for lambda?
+
+Options:
+A) lambda a b: a or b
+B) lambda a, b, a or b
+C) lambda a, b: a or b
+D) lambda (a, b) (a or b)
+
+Answer: C
+=======================
+Question 2:
+by: 09/asaf.samaun:
+
+MC Question: Suppose g = 'Stuyvesant High School', which shortcut would return 'Stuyvesant'?
+
+Options:
+A) g[0:9]
+B) g[1:10]
+C) g[:9]
+D) g[:10]
+
+Answer: D
+=======================
+Question 3:
+by: 09/caal.daniel:
+
+MC Question: How do you slice the first four elements off of a list? 
+
+Options:
+A) s[3:len(s)]
+B) s[3:0}
+C) s[:3:]
+D) s[0:0:4]
+
+Answer: A
+=======================
+Question 4:
+by: 09/chan.janice:
+
+MC Question:
+Which of the following slices of the string 'Hello' produces an error?
+Options:
+A) s[-5]
+B) s[-5:3]
+C) s[5]
+D) s[2:6]
+Answer
+C) s[5]
+=======================
+Question 6:
+by: 09/chen.michelle:
+
+"
+MC Question:
+Lists can be used like strings in many ways except:
+Options:
+A) Slicing
+B) Can be combined with +
+C) mutable
+D)len(g) returns the number of elements in the list
+
+Answer
+C)
+=======================
+Question 7:
+by: 09/cheng.alvin:
+
+MC Question:
+How do you slice the first 4 elements of a list?
+
+Options:
+A) s[3:len(s)]
+B) s[3:0]
+C) s[4:0]
+D) s[4:]
+
+Answer: A
+=======================
+Question 8:
+by: 09/codner.justin:
+
+MC Question:
+If s = 'i know it's a list', then what does s[3:15:3] return?
+
+Options:
+A) "now it's a l"
+B) "know it's a "
+C) "n 'a"
+D) "n 'ai"
+Answer
+C
+=======================
+Question 9:
+by: 09/gao.sandra:
+
+MC Question:
+What would this expression return:
+s = 'hello'
+s[:-5:-1]
+
+Options:
+A) 'lleh'
+B) 'olle'
+C) 'olleh'
+D) 'ello'
+
+Answer: B
+=======================
+Question 10:
+by: 09/hossain.shihab:
+
+MC Question: What does reduce do?
+
+Options:
+A. Reduce a value to its simplest form
+B. Reduces a list to X number of values
+C. Reduces a list to a single value
+D. Reduces substrings to a singular substring
+
+Answer
+C. Reduces a list to a single value
+=======================
+Question 11:
+by: 09/hsieh.naomi:
+
+MC Question:
+Given a list of numbers g where g = [1, 4, 9, 16, 25], which of the following functions returns 1 + the sum of the square roots of g?
+Assume that reduce has already been imported.
+
+Options:
+A) 1 + map(lambda a: a**(1/2), reduce(lambda a, b: a + b, g))
+B) 1 + list(map(lambda a: a**(1/2), reduce(lambda a, b: a + b, g))) 
+C) 1 + reduce(lambda a, b: a + b, map(lambda a: a**(1/2), g))
+D) 1 + list(reduce(lambda a, b: a + b, map(lambda a: a**(1/2), g)))
+
+Answer: C
+=======================
+Question 12:
+by: 09/hu.hugo:
+
+MC Question:
+Which of the following lines would return the sum of all numbers in a list?
+
+Options:
+A) list(map(lambda a, b: a + b, numList))
+B) list(reduce(lambda a, b: a + b, numList))
+C) map(lambda a, b: a + b, numList)
+D) reduce(lambda a, b: a + b, numList)
+
+Answer
+D
+=======================
+Question 13:
+by: 09/huang.hangqi:
+
+MC Question:
+Given g = 'Hello Mate!', what is the output of g[:5]?
+
+Options:
+A) 'Hello'
+B) 'Hello '
+C) 'Hell'
+D) 'Hello M'
+
+Answer: A
+=======================
+Question 14:
+by: 09/huang.matthew:
+
+MC Question: Suppose g = 'Stuyvesant High School', which shortcut would return 'Stuyvesant'?
+
+Options:
+A) g[0:9]
+B) g[1:10]
+C) g[:9]
+D) g[:10]
+
+Answer: D
+=======================
+Question 16:
+by: 09/leahy.alexa:
+
+MC Question:
+What output does the function for filter need to be?
+Options:
+Boolean
+Numeric
+String
+List
+Answer
+Boolean
+=======================
+Question 17:
+by: 09/mercone.lucia:
+
+MC Question:
+If you want to find the very last element in string s, what would be the quickest way to do so?
+Options:
+A) Iterate through every element of the list
+B) Find the element at index len(s)
+C) Slice the string using the code [:len(s)]
+D) Slice the string backwards using [-1]
+Answer
+D
+=======================
+Question 19:
+by: 09/pan.jamie:
+
+MC Question:
+What is the correct usage/syntax of lambda in these choices?
+
+Options:
+a. lambda x: x < 15
+b. lambda y
+        y = 15
+c. lambda a, b, c, a > b > c
+d. (define cost
+        lambda (base rate))
+
+Answer
+A
+=======================
+Question 20:
+by: 09/pavlov.lucas:
+
+MC Question: 
+Which of the following slices of the string s = "Hello" produces an error?
+Options:
+A) s[-5]
+B) s[-5:3]
+C) s[5]
+D) s[2:6]
+
+Answer
+D), s[2:6]
+=======================
+Question 21:
+by: 09/rong.yanghao:
+
+MC Question:
+What happens when you change x in the following loop?
+- for x in collection:
+    print (x)
+
+Options:
+A) It changes the index of the value
+B) It changes the total number of loops that is going to run
+C) It doesn't modify anything
+D) None of the above
+
+Answer: C
+=======================
+Question 22:
+by: 09/sunko.sam:
+
+MC Question:
+Which of the following illustrates correct usage of the 'for' loop, given you want to call the iterating variable i ang given an iterable g?
+
+Options:
+A) for(i, g):
+B) for g in i:
+C) for(i in g):
+D) for i in g:
+
+Answer: D
+=======================
+Question 23:
+by: 09/tam.iris:
+
+MC Question:
+Which of the following lines would return the sum of all numbers in a list?
+
+Options:
+A) list(map(lambda a,b:a+b, numList))
+B) list(reduce(lambda a,b:a+b, numList))
+C) map(lambda a,b:a+b, numList)
+D) reduce(lambda a,b:a+b, numList)
+
+Answer: D
+
+==================
+Programming question:
+
+fishlist=['anchovy','bass','bluefish','carp','catfish','cod','crayfish','flounder','grouper','haddock','halibut','herring','mackerel','marlin','perch','pollock','sablefish','salmon','sardine','snapper','swordfish','tilapia','tilefish','tuna','whitefish']
+Given this list, write a line of code that returns a list of only fish with the word 'fish' in their name. Use the function filter.
+
+Possible solution:
+==================
+"""
+print(list(filter(lambda e:e.find('fish')!=-1,fishlist))
+=======================
+Question 24:
+by: 09/vaca.ruby:
+
+MC Question:
+How many parameters does func require and how many values does it return?
+Options:
+a) 2 paparemetrs 2 values
+b) 1 paparemetrs 2 values
+c) 2 paparemetrs 1 value
+d) 1 paparemetrs 1 value
+Answer
+d
+=======================
+Question 25:
+by: 09/wang.kristy:
+
+MC Question:
+If s = "i know it's a list", then what does s[3:15:3] return?
+
+Options:
+A) "now it's a l"
+B) "know it's a "
+C) "n 'a"
+D) "n 'ai"
+Answer
+C
+=======================
+Question 26:
+by: 09/wongthep.thanapol:
+
+MC Question: 
+What is the result of s[1:5:2]
+s = "ABCDEFGHIJKLMNOP"
+
+Options:
+A) "BD"
+B) "BDF"
+C) "CE:
+D) "BCDEF"
+
+Answer
+A) "BD"
+=======================
+Question 27:
+by: 09/yang.derek:
+
+MC Question:
+Given a list of numbers g where g = [1, 4, 9, 16, 25], which of the following functions returns 1 + the sum of the square roots of g?
+Assume that reduce has already been imported.
+
+Options:
+A) 1 + map(lambda a: a**(1/2), reduce(lambda a, b: a + b, g))
+B) 1 + list(map(lambda a: a**(1/2), reduce(lambda a, b: a + b, g)))
+C) 1 + reduce(lambda a, b: a + b, map(lambda a: a**(1/2), g))
+D) 1 + list(reduce(lambda a, b: a + b, map(lambda a: a**(1/2), g)))
+
+Answer: C
+=======================
+Question 28:
+by: 09/zhou.andy:
+
+MC Question:
+How do you add the value 'a' to then end of the following list [f, e, d, c, b]?
+
+Options:
+A) [f, e, d, c, b].append('a')
+B) [f, e, d, c, b].find('a')
+C) [f, e, d, c, b].add('a')
+D) [f, e, d, c, b].remove('a')
+
+Answer: (A)
+=======================
+Question 29:
+by: 09/zou.sarah:
+
+MC Question:
+When given the string: s = "I love Mr. DWs class so much",
+what command would return "I love Mr. DWs class"?
+
+Options:
+A) s[1:19]
+B) s[:20:-1]
+C) s[:20]
+D) s[0:19]
+
+Answer:
+C
+=======================
+Question 30:
+by: 09/zukof.hayato:
+
+MC Question: Which of the following boolean statements returns true?
+
+Options:
+A) 5 = 5
+B) 6 % 3 = 0
+C) str ('fun') == 'fun'
+D) str (234) == str [234]
+
+Answer
+=======================
+Question 31:
+by: 10/agge.maya:
+
+MC Question: What is the operator to find the length of a list?
+
+Options:
+A) Chr
+B) Len
+C) Str
+D) Ord
+
+Answer: B
+=======================
+Question 32:
+by: 10/ashie.angelina:
+
+MC Question: What is the operator that finds the length of a list?
+
+Options:
+A) Chr
+B) Len
+C) Str
+D) Ord
+Answer: B) Len
+=======================
+Question 33:
+by: 10/carvallo.eva:
+
+MC Question:
+Which will give an error?
+g = [1, 2, 3, 4]
+s = "hello world"
+Options:
+g[::-1]
+g.find(1)
+s.find(' ')
+g + [5, 6, 7]
+Answer
+g.find(1)
+=======================
+Question 34:
+by: 10/chae.nate:
+
+MC Question:
+Which of the following is untrue about lists?
+
+Options:
+A) Lists in python can store other lists
+B) Can be concatenated with +
+C) Are immutable
+D) Each element in a list has an index
+
+Answer
+C
+=======================
+Question 35:
+by: 10/chen.angelo:
+
+MC Question:
+What is the difference between g.append and g.insert, where g is a list and the parameters are omitted?
+
+Options:
+A) g.append takes 2 lists as parameters and combines them together while g.insert takes 1 parameter and sticks it to the end of the list.
+B) g.append has 1 parameter and adds that to the end of the list while g.insert takes two parameters, and adds a key to a specific index in the list.
+C) g.insert takes a parameter and adds that to the end of the list while g.append combines two strings and forms a list.
+D) g.insert takes a list and makes it a string while g.append takes a string and makes it a list.
+
+Answer: B
+=======================
+Question 36:
+by: 10/chen.catherine:
+
+MC Question:
+fruits = ['apple', 'strawberry', 'banana', 'peach', 'pear']
+function = list(filter(lambda x: len(x) = 4, fruits))
+
+What would function return?
+
+Options:
+A) 'pear'
+B) 'peach'
+C) ['peach']
+D) ['pear']
+
+Answer: D
+=======================
+Question 37:
+by: 10/chen.serena:
+
+MC Question:
+Which of the following is correct?
+
+Options:
+(A) reduce uses a function that takes in 2 parameters and returns a list of values.
+(B) map uses a function that takes in 2 parameters and returns a list of values
+(C) map uses a function that takes in 1 parameter and returns a single value
+(D) filter uses a function that takes in 2 parameters and returns a list of values
+Answer
+(C)
+=======================
+Question 38:
+by: 10/chin.benjamin:
+
+MC Question:
+Which function needs two parameters
+Options:
+A. map
+B. filter
+c. reduce
+d. all of the above
+Answer
+d
+=======================
+Question 39:
+by: 10/cimpoiesu.alex:
+
+MC Question:
+What will s[:5:2] return with s = [1 , 2, 3, 4, 5, 6, 7, 8, 9, 10]?
+Options:
+a) [2, 4, 6, 8, 10]
+b) [5, 7, 9]
+c) [1, 3]
+d) [1, 3, 5]
+
+Answer: D
+=======================
+Question 42:
+by: 10/hou.kenneth:
+
+MC Question:
+If your given the list s = [2,5,7,9] and run the command s[2:] what will it return?
+
+Options:
+A) [2,5,7,9]
+B) [5,7,9]
+C) [7,9]
+D) Error
+
+Answer
+C
+=======================
+Question 43:
+by: 10/hu.brandon:
+
+MC Question: What is the function of the reduce function?
+
+Options:
+A: Uses a function and runs it on the first two elements of g,
+recursively using it with the previously returned value and the
+next two elements.
+B: Runs a function on each parameter of a list. If the function is true,
+then the new element is included in the list.
+C: Runs a function on each parameter of a list. Does not require
+a truth value.
+D: Creates a new function without directly naming it.
+
+Answer: A
+=======================
+Question 45:
+by: 10/lee.yuna:
+
+MC Question: What is an invalid way of string slicing.
+
+Options:
+A:s.(1:3)
+B:s.[:]
+C:s[1:]
+D:s.[1:3]
+
+Answer: C
+=======================
+Question 47:
+by: 10/lin.gavin:
+
+MC Question: s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+What will s[:5:2] return?
+
+Options:
+a) [2, 4, 6, 8, 10]
+b) [5, 7, 9]
+c) [1, 3]
+d) [1, 3, 5]
+Answer: D
+=======================
+Question 48:
+by: 10/lin.sean:
+
+MC Question: What is an invalid way of string slicing.
+
+Options:
+A:s.(1:3)
+B:s.[:]
+C:s[1:]
+D:s.[1:3]
+
+Answer: C
+=======================
+Question 49:
+by: 10/liu.evelyn:
+
+MC Question:
+
+What is the difference between for and while loops?
+
+Options:
+
+A) Only while loops can loop through the whole list
+B) You can access the index in a while loop, but not in a for loop
+C) Only for loops iterate through a list/string one element at a time
+D) All of the above
+
+Answer: B
+=======================
+Question 50:
+by: 10/liu.simon:
+
+MC Question:
+x = ['hello', 'everybody', 'my', 'name', 'is', 'Markiplier!']
+Given this list, which of the following functions will return an error, if any? Assume reduce has been imported.
+Options:
+A: x[0] = 'goodbye'
+B: x.insert('and goodbye', 1)
+C: reduce(lambda s0, s1: s0 + s1, x)
+D: None, all of these functions work.
+
+Answer
+B, the values must be swapped.
+=======================
+Question 51:
+by: 10/naveed.fatima:
+
+MC Question: Which of the following answer choices properly slices the string "I love Stuy"?
+
+Options:
+a) "I love Stuy" print(phrase[2:6])
+b) phrase = "I love Stuy" print(phrase[2:])
+c) phrase = "I love Stuy" print(phrase[2:6])
+d) phrase = "I love Stuy" slice
+
+Answer: C
+=======================
+Question 52:
+by: 10/pisareva.sofia:
+
+MC Question: What is the output of the following code snippet?
+
+x = "hello"
+y = x[1:3]
+print(y)
+
+Options:Options:
+A) h
+B) e
+C) el
+D) llo
+
+Answer:
+C) el
+=======================
+Question 54:
+by: 10/seidenberg.somerset:
+
+MC Question: which of the following will return a list, assuming foo is a valid function and g is a list:
+
+Options:
+a. print(map(foo, g))
+b. print(list(map(foo, g)))
+c. print(map(list(foo, g)))
+d. none of the above
+Answer
+b
+=======================
+Question 55:
+by: 10/shahab.navid:
+
+MC Question: What is the function of the reduce function
+
+Options:
+A: Uses a function and runs it on the first two elements of g, recursively using it with the previously returned value and the next element.
+B: Runs a function on each parameter of a list. If the func is true, then the new element is included in the list.
+C: Runs a function on each parameter of a list. Does not require a truth value.
+D: Creates a new function without directly naming it
+
+Answer
+A
+=======================
+Question 56:
+by: 10/stahl.axel:
+
+MC Question:
+
+Which returns a list?
+
+Options:
+
+a) reduce
+b) map
+c) upper
+d) count
+
+Answer
+
+b) map
+=======================
+Question 57:
+by: 10/titievsky.leo:
+
+MC Question: What is the output of the following code snippet?
+
+x = "hello"
+y = x[1:3]
+print(y)
+
+Options:Options:
+A) h
+B) e
+C) el
+D) llo
+
+Answer:
+C) el
+=======================
+Question 58:
+by: 10/vaithilingam.aruna:
+
+MC Question:
+Which will give an error?
+g = [1, 2, 3, 4]
+s = "hello world"
+
+Options:
+g[::-1]
+g.find(1)
+s.find(' ')
+g + [5, 6, 7]
+
+Answer
+g.find(1)
+=======================
+Question 60:
+by: 10/xiao.steven:
+
+MC Question:
+Given string = 'Hello World'
+
+what does string[2::2] return
+
+Options:
+A) 'llo World'
+B) 'HloWrd'
+C) 'loWrd'
+D) 'lo le'
+
+Answer: C
+=======================
+Question 61:
+by: 10/yarden.ben:
+
+MC Question: which of the following functions requires a function with two parameters
+
+Options:
+
+a: filter
+b: reduce
+c: map
+d: for
+
+Answer
+
+reduce
+=======================
+Question 62:
+by: 10/yee.estella:
+
+MC Question:
+Which of the following is correct?
+
+Options:
+(A) reduce uses a function that takes in 2 parameters and returns a list of values.
+(B) map uses a function that takes in 2 parameters and returns a list of values
+(C) map uses a function that takes in 1 parameter and returns a single value
+(D) filter uses a function that takes in 2 parameters and returns a list of values
+Answer
+(C)
+=======================
+Question 63:
+by: 10/zheng.ricky:
+
+MC Question: What is an invalid way of string slicing.
+
+Options:
+A:s.(1:3)
+B:s.[:]
+C:s[1:]
+D:s.[1:3]
+
+Answer: C

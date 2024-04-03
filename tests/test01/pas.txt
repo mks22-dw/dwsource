@@ -1,0 +1,530 @@
+
+=======================
+Question 0:
+by: 09/abraham.max:
+
+def banana (l):
+    l = list(map(lambda a: "banana",l))
+    return l
+=======================
+Question 1:
+by: 09/aranda.eleanor:
+
+def squarebingo(g):
+    f = []
+    for x in g:
+        if x % 5 == 0:
+            f.append('bingo')
+        else:
+            f.append(x ** 2)
+    return f
+
+sample = [4, 5, 2, 7, 5, 9.5, 10, 12, 1, 2, 4, 45]
+print(squarebingo(sample))
+=======================
+Question 2:
+by: 09/asaf.samaun:
+
+def evens(h):
+    newg = []
+    for x in h:
+        if (x % 2 == 0):
+            newg.append(x)
+    return newg
+=======================
+Question 3:
+by: 09/caal.daniel:
+
+def listOfLists(g):
+    i = 0
+    while i < len(g):
+        if i % 2 == 0:
+            t = 0
+            while t < len(g[i]):
+                h = 0
+                while h < len(g[i][t]):
+                    g[i][t]= chr(ord(g[i][t]) - 32)
+                    h += 1
+                t += 1
+        i += 1
+    return g
+=======================
+Question 4:
+by: 09/chan.janice:
+
+def largest(g):
+    largest = 0
+    for e in g:
+        if e > largest:
+            largest = e
+    return largest
+=======================
+Question 6:
+by: 09/chen.michelle:
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_sum = reduce(lambda x, y: x + y, filter(lambda x: x % 2 == 0, numbers))
+
+print(even_sum)
+=======================
+Question 7:
+by: 09/cheng.alvin:
+
+def listoflists(g):
+    i = 0
+    capdiff = ord('A') - ord('a')
+    new = ''
+    while i < len(g):
+        if i//2==0:
+            for x in g[i]:
+                n = 0
+                while n < len(g[i][n]):
+                    new += str(chr(ord(g[i][n]) + capdiff))
+                    n+=1
+        i+=1
+    return new
+=======================
+Question 8:
+by: 09/codner.justin:
+
+def lcmList(g):
+    n = 1
+    for e in g:
+        b = n
+        while n%e != 0:
+            n+=b
+    return n
+=======================
+Question 9:
+by: 09/gao.sandra:
+
+from functools import reduce
+def consonent_count(word):
+    word = list(word)
+    
+    return len(list(filter(lambda a: a != 'a' and a != 'e' and a != 'i' and a != 'o' and a != 'u', word)))
+=======================
+Question 10:
+by: 09/hossain.shihab:
+
+lengths = list(map(len, resturaunts))
+=======================
+Question 11:
+by: 09/hsieh.naomi:
+
+def ans(li):
+    cur = li
+    ans = ""
+    while (len(cur) > 0):
+        l = len(cur)
+        search = cur[0]
+        cur = list(filter(lambda s: s != search, cur))
+        ans += search + " : " + str(l - len(cur)) + "\n"
+    return ans
+
+li = ["a", "b", "a", "c", "c", "a"]
+print(ans(li))
+=======================
+Question 12:
+by: 09/hu.hugo:
+
+from functools import reduce
+
+def sumEven (x):
+    newList = list(filter(lambda a: a % 2 == 0, x))
+    return reduce(lambda a, b: a + b, newList)
+=======================
+Question 13:
+by: 09/huang.hangqi:
+
+def days_of_month(a, b):
+    if a > b:
+        i = 7 - (a - b)
+    elif a < b:
+        i = abs(a - b)
+    else:
+        i = 7
+    n = []
+    while i <= 31:
+        n += [i]
+        i += 7
+    return n
+=======================
+Question 14:
+by: 09/huang.matthew:
+
+def evens(h):
+    newg = []
+    for x in h:
+        if (x % 2 == 0):
+            newg.append(x)
+    return newg
+=======================
+Question 16:
+by: 09/leahy.alexa:
+
+
+=======================
+Question 17:
+by: 09/mercone.lucia:
+
+
+=======================
+Question 19:
+by: 09/pan.jamie:
+
+
+=======================
+Question 20:
+by: 09/pavlov.lucas:
+
+def largest(s):
+    largest = 0
+    for i in s:
+        if(i > largest):
+            largest = i
+    return largest
+=======================
+Question 21:
+by: 09/rong.yanghao:
+
+def numA(s):
+    n = 0
+    t = 0
+    count = 0
+    while (n < len(s)):
+        while (t < len(s[n])):
+            if ((s[n])[t]) == 'a' or ((s[n])[t]) == 'A':
+                count += 1
+            t += 1
+        t = 0
+        n += 1
+    return count
+=======================
+Question 22:
+by: 09/sunko.sam:
+
+import functools
+
+def second_wordsVfor(g):
+    new=[]
+    for i in g:
+        k=i.find(' ')
+        second=i[(k+1):]
+        second_word=functools.reduce(lambda a,b: a+b, second)
+        new+=[second_word]
+    return new
+
+def second_wordsVmap(g):
+    def getSecond(m):
+        k=m.find(' ')
+        return m[(k+1):]
+    return list(map(getSecond, g))
+=======================
+Question 23:
+by: 09/tam.iris:
+
+print(list(filter(lambda e:e.find('fish')!=-1,fishlist)))
+=======================
+Question 24:
+by: 09/vaca.ruby:
+
+def capital(g):
+    p = filter(lambda e: ord(e) >= ord('A') and ord(e) <= ord('Z'), g)
+    print(p)
+=======================
+Question 25:
+by: 09/wang.kristy:
+
+def lcmList(g):
+    n = 1
+    for e in g:
+        b = n
+        while n%e != 0:
+            n+=b
+    return n
+=======================
+Question 26:
+by: 09/wongthep.thanapol:
+
+def f00(g):
+    L = []
+    for e in g:
+        if e % 2 == 0:
+            L += [e]
+        else:
+            e += 1
+            L += [e]
+    return L
+=======================
+Question 27:
+by: 09/yang.derek:
+
+def ans(li):
+    cur = li
+    ans = ""
+    while (len(cur) > 0):
+        l = len(cur)
+        search = cur[0]
+        cur = list(filter(lambda s: s != search, cur))
+        ans += search + " : " + str(l - len(cur)) + "\n"
+    return ans
+
+li = ["a", "b", "a", "c", "c", "a"]
+print(ans(li))
+=======================
+Question 28:
+by: 09/zhou.andy:
+
+g = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for a in g:
+    if g[a] < g[10]:
+        a = a * g[a + 1]
+    else:
+        a = a * a
+    print (a)
+=======================
+Question 29:
+by: 09/zou.sarah:
+
+def apples(g):
+    i = 0
+    c = 1
+    m = len(g)
+    
+    while i < m:
+        if g[i] == 0:
+            g[i] = c
+            c += 1
+        
+        i += 1
+=======================
+Question 30:
+by: 09/zukof.hayato:
+
+def filternum(l):
+    return list(
+    filter
+    (lambda a: str (a) != a, l))
+=======================
+Question 31:
+by: 10/agge.maya:
+
+
+=======================
+Question 32:
+by: 10/ashie.angelina:
+
+
+=======================
+Question 33:
+by: 10/carvallo.eva:
+
+
+=======================
+Question 34:
+by: 10/chae.nate:
+
+def notmatching(s, g):
+    count = 0
+    for i in g:
+        if i == s:
+            count += 1
+    return len(g) - count
+
+print(notmatching('yes', ['yes', 'yes', 'no', 'no', 'no', 'yes']))
+=======================
+Question 35:
+by: 10/chen.angelo:
+
+g = [1, 3, -7, 2, 12, 3, 1, 7]
+def myRange(l):
+    largest = l[0]
+    smallest = l[0]
+    for a in l:
+        if a > largest:
+            largest = a
+        if a < smallest:
+            smallest = a
+    rangee = largest-smallest
+    print(rangee)
+=======================
+Question 36:
+by: 10/chen.catherine:
+
+short = list(filter(lambda x: len(x) < 6, fruits))
+print (short)
+=======================
+Question 37:
+by: 10/chen.serena:
+
+def foo(n, g):
+    new_g = g[::-1]
+    for e in new_g:
+        if (e == n):
+            return new_g[new_g.find(e)::-1]
+
+print(foo('k','wkefkkjhg2937ykwefj'))
+=======================
+Question 38:
+by: 10/chin.benjamin:
+
+def answer(g):
+    y=list(map(lambda a: a[:a.find(' ')], g))
+    return y[::-1]
+=======================
+Question 39:
+by: 10/cimpoiesu.alex:
+
+def div5(listy):
+    newlisty = []
+    for a in listy:
+        if a % 5 == 0:
+            newlisty.append(a)
+    return newlisty
+=======================
+Question 42:
+by: 10/hou.kenneth:
+
+a_count = list(map(lambda s: s.count('a'), L))
+print(a_count)
+=======================
+Question 43:
+by: 10/hu.brandon:
+
+
+=======================
+Question 45:
+by: 10/lee.yuna:
+
+
+=======================
+Question 47:
+by: 10/lin.gavin:
+
+def div5(l):
+    for a in l:
+        if a % 5 == 0:
+            return a
+=======================
+Question 48:
+by: 10/lin.sean:
+
+
+=======================
+Question 49:
+by: 10/liu.evelyn:
+
+import functools
+
+g = [15, 80, -9, 0, 2, -92, -6, 5, -2, 34]
+
+even_nums = filter(lambda a: a%2==0, g)
+
+ans = functools.reduce(lambda a, b: a+b , even_nums)
+
+print(ans)
+=======================
+Question 50:
+by: 10/liu.simon:
+
+
+=======================
+Question 51:
+by: 10/naveed.fatima:
+
+
+=======================
+Question 52:
+by: 10/pisareva.sofia:
+
+
+=======================
+Question 54:
+by: 10/seidenberg.somerset:
+
+"""
+MC Question:
+What is the air speed of an unladen swallow?
+
+Options:
+A) 2 mph
+B) 20 mph
+C) 200 mph
+D) African or European?
+
+Answer: D
+
+=======================
+Programming question:
+
+Write a function that returns the ones
+digit of an integer.
+
+Possible solution:
+
+def backfront(name):
+    s = name[name.find(' '):] + ' ' + name[:name.find(' ')]
+    return s
+
+=======================
+"""
+def backfront(name):
+    s = name[name.find(' '):] + ' ' + name[:name.find(' ')]
+    return s
+
+print(backfront('cheese doodle'))
+=======================
+Question 55:
+by: 10/shahab.navid:
+
+
+=======================
+Question 56:
+by: 10/stahl.axel:
+
+def problem(li):
+    return list(filter(lambda s: s.count(' ')!=1, li))
+
+print(problem(["a b", "wef", "we", "k i"]))
+=======================
+Question 57:
+by: 10/titievsky.leo:
+
+
+=======================
+Question 58:
+by: 10/vaithilingam.aruna:
+
+
+=======================
+Question 60:
+by: 10/xiao.steven:
+
+List=['Hello', 'World', 'Exclamation Mark']
+def backwards(g):
+    return (list(map(lambda a: a[::-1], g)))
+print(backwards(List))
+=======================
+Question 61:
+by: 10/yarden.ben:
+
+
+=======================
+Question 62:
+by: 10/yee.estella:
+
+def foo(n, g):
+    new_g = g[::-1]
+    for e in new_g:
+        if (e == n):
+            return new_g[new_g.find(e)::-1]
+
+print(foo('k','wkefkkjhg2937ykwefj'))
+=======================
+Question 63:
+by: 10/zheng.ricky:
+
