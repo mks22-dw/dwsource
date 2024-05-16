@@ -1,0 +1,671 @@
+
+=======================
+Question 0:
+by: 09/abraham.max:
+
+def bye_w(string):
+    ns = string.replace('w', '')
+    return ns
+=======================
+Question 1:
+by: 09/aranda.eleanor:
+
+def period_comma(s):
+    periodless = s.split('.')
+    commas = ','.join(periodless)
+    return commas
+
+s0 = 'this is a sentence. this is another. more. and less. sentence.'
+print(period_comma(s0))
+=======================
+Question 2:
+by: 09/asaf.samaun:
+
+def ListsToDict(g, g1):
+    d = {}
+    i = 0
+    while i < len(g0):
+        d[g0[i]] = g1[i]
+        i+= 1
+    return d
+=======================
+Question 3:
+by: 09/caal.daniel:
+
+def dw(s):
+    s = s.replace('"', '')
+    s = s.strip().split('=' * 23)
+    f = s[0].find('Answer: ')
+    answer = s[0][f:]
+    s[0] = s[0][:f]
+    s.insert(1, answer)
+    return s
+
+ans = dw('''
+"""
+MC Question:
+
+
+Options:
+
+Answer: D
+
+=======================
+Programming question:
+
+Description
+
+Possible solution:
+=======================
+"""
+
+
+def dw(s):
+    s = s.replace('"', '')
+    s = s.strip().split('=' * 23)
+    f = s[0].find('Answer: ')
+    answer = s[0][f:]
+    s[0] = s[0][:f]
+    s.insert(1, answer)
+    return s
+''')
+
+pprint(ans)
+=======================
+Question 4:
+by: 09/chan.janice:
+
+def dictionary_avgs(d):
+    values = list(d.values())
+    return sum(values) / len(values)
+
+test = dictionary_avgs({'a': 2, 'b': 3, 'c': 4})
+print(test)
+=======================
+Question 5:
+by: 09/chen.galvin:
+
+def combine_dict(d0,d1):
+    nd = {}
+    for x in d0:
+        nd[x] = (d0[x] + d1[x])
+    return nd
+=======================
+Question 6:
+by: 09/chen.michelle:
+
+def top_performers(scores):
+    # Find the maximum score
+    max_score = max(scores.values())
+    
+    # Create a list to store the top performers
+    top_students = [student for student, score in scores.items() if score == max_score]
+    
+    return top_students
+
+# Example usage:
+scores = {
+    'Alice': 95,
+    'Bob': 87,
+    'Charlie': 95,
+    'David': 92,
+    'Eva': 89
+}
+
+top_students = top_performers(scores)
+print("Top performers:", top_students)
+=======================
+Question 8:
+by: 09/codner.justin:
+
+word_list = ['agony', 'reflection', 'swallow', 'grant', 'well', 'professor', 'switch', 'deficit', 'pilot', 'national', 'dough', 'linger', 'command', 'patience', 'proud', 'bat', 'injury', 'meal', 'manner', 'facility', 'abridge', 'liberty', 'lounge', 'sacred', 'dangerous', 'shareholder', 'disaster', 'banana', 'formula', 'ash']
+
+
+def first_letter_dict(g):
+    newDict = {}
+    for e in g:
+        if e[0] in newDict:
+            newDict[e[0]]+= 1
+        else:
+            newDict[e[0]]= 1
+    return newDict
+
+print(first_letter_dict(word_list))
+=======================
+Question 9:
+by: 09/gao.sandra:
+
+def word_count(s):
+    f = open(s, encoding='utf-8')
+    text = f.read()
+    f.close()
+    
+    text = text.lower()
+    text = list(filter(lambda a: a >= 'a' and a <= 'z', text.strip()))
+    
+    d = {}
+    for c in text:
+        if c in d:
+            d[c] += 1
+        else:
+            d[c] = 1
+    return d
+=======================
+Question 10:
+by: 09/hossain.shihab:
+
+
+=======================
+Question 11:
+by: 09/hsieh.naomi:
+
+def sort(s):
+    s = s.lower()
+    g = s.split()
+    d = {}
+    for i in g:
+        d[i[0]] = i
+    i = ord('a')
+    alphabet = []
+    while(i < ord('z')+1):
+        char = chr(i)
+        alphabet.append(d[char])
+        i += 1
+    alphabetstring = " ".join(alphabet)
+    return alphabetstring
+
+print(sort("azumarill MeLOETTa hoothoot dedenne feraligatr bergmite zygarde glaceon jellicent cubone turtonator litleo serperior nOCtOwl inteleon eevee POKEMON kecleon reshiram yveltal umbreon oranguru vespiqueN waiLMER xerneas quaxly"))
+=======================
+Question 12:
+by: 09/hu.hugo:
+
+def yearSum(n):
+  for k in n:
+      n[k] = sum(n[k])
+=======================
+Question 13:
+by: 09/huang.hangqi:
+
+def dict(s):
+    s = s.split(" ")
+    d = {}
+    i = 0
+    while i < len(s):
+        d[i] = s[i]
+        i += 1
+    return d
+=======================
+Question 14:
+by: 09/huang.matthew:
+
+def ListsToDict(g, g1):
+    d = {}
+    i = 0
+    while i < len(g0):
+        d[g0[i]] = g1[i]
+        i+= 1
+    return d
+=======================
+Question 16:
+by: 09/leahy.alexa:
+
+
+=======================
+Question 17:
+by: 09/mercone.lucia:
+
+
+=======================
+Question 18:
+by: 09/mupparapu.mira:
+
+def lower_case_values(d0, d1):
+    f = list(d0.values())
+    g = list(d1.values())
+    a = 0
+    b = 0
+    d = {}
+    while a < len(f):
+        if 'a' <= f[a] and f[a] <= 'z':
+            d[b] = f[a]
+            b += 1
+        if 'a' <= g[a] and g[a] <= 'z':
+            d[b] = g[a]
+            b += 1
+        a += 1
+    return d
+print(lower_case_values({1:'a', 2: 'B', 3:'2'}, {4:'A', 5: 'b', 6:'c'}))
+=======================
+Question 19:
+by: 09/pan.jamie:
+
+def period_comma(s):
+    periodless = s.split('.')
+    with_comma = ','.join(periodless)
+    return with_comma
+
+s0 = "sentence. i like sentence. sentence"
+print(period_comma(s0))
+=======================
+Question 20:
+by: 09/pavlov.lucas:
+
+def dsum(d):
+    o=0
+    for key in d:
+        o += key*d[key]
+    return o
+=======================
+Question 21:
+by: 09/rong.yanghao:
+
+def newLine(s):
+    punctuation = """!?.()":;,-"""
+    for x in s:
+        if x in punctuation:
+            s = s.replace(x, ' ')
+    s = s.split()
+    s = '\n'.join(s)
+    return s
+=======================
+Question 22:
+by: 09/sunko.sam:
+
+def sqrt_dict(n):
+    i=1
+    sqrt_dict={}
+    while i<=n:
+        sqrt_dict[i]=str(i**(1/2))
+        i+=1
+    return sqrt_dict
+=======================
+Question 23:
+by: 09/tam.iris:
+
+def yearSum(n):
+    for k in n:
+        n[k]=sum(n[k])
+=======================
+Question 24:
+by: 09/vaca.ruby:
+
+def remove_singles(g):
+    num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    x = 0
+    a = []
+    while x < len(g):
+        a.append(g[x])
+        if g[x] in num:
+            a.remove(g[x])
+        x += 1
+    return a
+g = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'lf']
+print(remove_singles(g))
+=======================
+Question 25:
+by: 09/wang.kristy:
+
+word_list = ['agony', 'reflection', 'swallow', 'grant', 'well', 'professor', 'switch', 'deficit', 'pilot', 'national', 'dough', 'linger', 'command', 'patience', 'proud', 'bat', 'injury', 'meal', 'manner', 'facility', 'abridge', 'liberty', 'lounge', 'sacred', 'dangerous', 'shareholder', 'disaster', 'banana', 'formula', 'ash']
+
+
+def first_letter_dict(g):
+    newDict = {}
+    for e in g:
+        if e[0] in newDict:
+            newDict[e[0]]+= 1
+        else:
+            newDict[e[0]]= 1
+    return newDict
+
+print(first_letter_dict(word_list))
+=======================
+Question 26:
+by: 09/wongthep.thanapol:
+
+def lower_case_values(d0, d1):
+    d = {}
+    b = 0
+    for x in d0:
+        if d0[x] >= 'a' and d0[x] <= 'z':
+            d[b] = d0[x]
+            b += 1
+    for x in d1:
+        if d1[x] >= 'a' and d1[x] <= 'z':
+            d[b] = d1[x]
+            b += 1
+    return d
+=======================
+Question 27:
+by: 09/yang.derek:
+
+def sort(arr):
+    d = {}
+    for s in arr:
+        d[s[0]] = s
+    ret = ""
+    cur = 'a'
+    while cur <= 'z':
+        ret += d[cur] + " "
+        cur = chr(ord(cur) + 1)
+    return ret
+
+print(sort(['g',"q","w","edward","r","t",'y','u','i','o','p','a','s','d','f','h','j','k','l','z','x','c','v','b','n','m']))
+=======================
+Question 28:
+by: 09/zhou.andy:
+
+def remove_singles(g):
+    num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    x = 0
+    a = []
+    while x < len(g):
+        a.append(g[x])
+        if g[x] in num:
+            a.remove(g[x])
+        x += 1
+    return a
+g = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'lf']
+print(remove_singles(g))
+=======================
+Question 29:
+by: 09/zou.sarah:
+
+def values_squared(d):
+    values = (list(d.values()))
+    i = 0
+    
+    for x in d:
+        d[x] = values[i] ** 2
+        
+        i += 1
+        
+dictionary = { '1' : 1, '2' : 2, '3' : 3 }
+values_squared(dictionary)
+print(dictionary)
+=======================
+Question 31:
+by: 10/agge.maya:
+
+
+=======================
+Question 32:
+by: 10/ashie.angelina:
+
+
+=======================
+Question 34:
+by: 10/chae.nate:
+
+def evenfreq(g):
+    newdict = {}
+    for i in g:
+        if i % 2 == 0:
+            if i in newdict:
+                newdict[i] += 1
+            else:
+                newdict[i] = 1
+    return newdict
+=======================
+Question 35:
+by: 10/chen.angelo:
+
+
+=======================
+Question 36:
+by: 10/chen.catherine:
+
+def Cdictionary(d):
+    letters = []
+    numbers = []
+    dnew = {}
+
+    # Separate letters and numbers into separate lists
+    for i in range(len(d)):
+        if isinstance(d[i], str):
+            letters.append(d[i])
+        elif isinstance(d[i], (int, float)):
+            numbers.append(d[i])
+
+    # Create dictionary from paired letters and numbers
+    for j in range(min(len(letters), len(numbers))):
+        dnew[letters[j]] = numbers[j]
+
+    return dnew
+
+d = ['h', 6, 'k', 'r', 5, 3]
+
+print(Cdictionary(d))
+=======================
+Question 37:
+by: 10/chen.serena:
+
+def numberify(s):
+    numbers = '0123456789'
+    for e in s:
+        if e not in numbers:
+            s = s.replace(e, '')
+    s = int(s)
+    return s
+print(numberify('qs27sdfk!8674?'))
+=======================
+Question 38:
+by: 10/chin.benjamin:
+
+def answer(s):
+    a={}
+    b=s.split()
+    for e in b:
+        if 'e' in e:
+            a[e]=b.count(e)
+    return a
+=======================
+Question 39:
+by: 10/cimpoiesu.alex:
+
+def swap_dict(x):
+    a = list(x.keys())
+    d = {}
+    for g in a:
+        d[g] = 'banana'
+    return d
+print(swap_dict({1: 2, 3: 5}))
+=======================
+Question 40:
+by: 10/das.amrit:
+
+def lineless(g):
+    g = open(g)
+    g = g.read()
+    g = g.split('\n')
+    ' '.join(g)
+    g = g.split(', ')
+    g = ' '.join(g)
+    return g
+=======================
+Question 42:
+by: 10/hou.kenneth:
+
+def combine(x, y):
+    new = {}
+    z = 0
+    while z < len(x):
+        new[x[z]] = y[z]
+        z+= 1
+    return new
+=======================
+Question 43:
+by: 10/hu.brandon:
+
+def sort(l):
+    letters = []
+    num = []
+    d = {}
+    i = 0
+    for char in l:
+        if str(char) >= 'a' and str(char) <= 'z':
+            letters.append(char)
+        else:
+            num.append(char)
+    if len(letters) < len(num):
+        letters = letters[:len(num)]
+        while i + 1 <= len(letters):
+            d[letters[i]] = num[i]
+            i += 1
+    else:
+        letters = letters[:len(num)]
+        while i + 1 <= len(letters):
+            d[letters[i]] = num[i]
+            i += 1
+    return d
+
+print(sort(['a','b',6,'h','i',2,5]))
+=======================
+Question 45:
+by: 10/lee.yuna:
+
+
+=======================
+Question 46:
+by: 10/li.angelina:
+
+def comma(s):
+    s = s.split(" ")
+    s = ", ".join(s)
+    return s
+print(comma("hi my name is bob"))
+=======================
+Question 47:
+by: 10/lin.gavin:
+
+def swap_dict(x):
+    a = list(x.keys())
+    d = {}
+    for g in a:
+        d[g] = 'banana'
+    return d
+print(swap_dict({1: 2, 3: 5}))
+=======================
+Question 48:
+by: 10/lin.sean:
+
+x = 'NeVer GoNnA GiVe yOu uP'
+
+def remove_string(s,i):
+    e = s.lower()
+    return e.replace(i,'')
+print(remove_string(x,'e'))
+=======================
+Question 49:
+by: 10/liu.evelyn:
+
+def list_of_things(s):
+    l = s.split(' ')
+    l = ', '.join(l)
+    return l
+
+print(list_of_things('apple orange banana strawberry coconut'))
+=======================
+Question 50:
+by: 10/liu.simon:
+
+
+=======================
+Question 52:
+by: 10/pisareva.sofia:
+
+def listdelimit(g):
+    ct = 0
+    while ct < len(g):
+        ct1 = 0 
+        while ct1 < len g[ct]:
+            if g[ct][ct1] !== g[ct][1]:
+                g[ct][ct1] = g[ct][ct1].split(g[ct][1])
+            ct1 += 1
+        ct+=1
+    return g
+=======================
+Question 55:
+by: 10/shahab.navid:
+
+
+=======================
+Question 56:
+by: 10/stahl.axel:
+
+def count_whitespace(dic):
+    return ''.join(dic.values()).count(' ') + ''.join(dic.values()).count('\n')
+=======================
+Question 57:
+by: 10/titievsky.leo:
+
+def listdelimit(g):
+    ct = 0
+    while ct < len(g):
+        ct1 = 0 
+        while ct1 < len g[ct]:
+            if g[ct][ct1] !== g[ct][1]:
+                g[ct][ct1] = g[ct][ct1].split(g[ct][1])
+            ct1 += 1
+        ct+=1
+    return g
+=======================
+Question 58:
+by: 10/vaithilingam.aruna:
+
+def removefreq(g):
+    d = {}
+    ## count values
+    for e in g:
+        if e in d:
+            d[e] += 1
+        else:
+            d[e] = 1
+    ## find max value
+    maxFreq = max((list(d.values())))
+    ## find and remove corresponding key
+    for e in g:
+        if d[e] == maxFreq:
+            d.pop(e)
+            return d
+
+g = [1, 2, 3, 4, 2, 5]
+print(removefreq(g))
+=======================
+Question 60:
+by: 10/xiao.steven:
+
+alice = open('data/alice.txt', encoding = 'utf-8')
+alice_s = alice.read()
+alice.close()
+
+def count_nums(s):
+    d= {}
+    for e in s:
+        if '0' <= e <= '9':
+            if e in d:
+                d[e] += 1
+            else:
+                d[e] = 1
+    return d
+print(count_nums(alice_s))
+=======================
+Question 61:
+by: 10/yarden.ben:
+
+
+=======================
+Question 62:
+by: 10/yee.estella:
+
+def numberify(s):
+    g = []
+    for e in s:
+        if '0' <= e <= '9':
+            g.append(e)
+    return ''.join(g)
+        
+print(numberify('qs27sdfk!8674?'))
+=======================
+Question 63:
+by: 10/zheng.ricky:
+

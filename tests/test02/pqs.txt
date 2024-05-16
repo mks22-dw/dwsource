@@ -1,0 +1,809 @@
+
+=======================
+Question 0:
+by: 09/abraham.max:
+
+=
+Programming question:
+Make a program that returns a sting with all the w's removed.
+Description
+
+Possible solution:
+=======================
+=======================
+Question 1:
+by: 09/aranda.eleanor:
+
+=
+Programming question:
+
+Write a function that take a sentence and changes the periods into commas (without using replace).
+
+Possible solution:
+=======================
+=======================
+Question 2:
+by: 09/asaf.samaun:
+
+=
+Programming question: Take two lists with the same length and make a dictionary such that the keys of the first list are the elements from the second, and vice versa.
+
+Description
+
+Possible solution:
+
+=======================
+=======================
+Question 3:
+by: 09/caal.daniel:
+
+=
+Programming question:
+
+Description
+
+Possible solution:
+=======================
+=======================
+Question 4:
+by: 09/chan.janice:
+
+=
+Programming question:
+
+Write a function that takes a dictionary and returns
+the average of the values. Assume all values are numbers.
+
+Possible solution:
+=======================
+=======================
+Question 5:
+by: 09/chen.galvin:
+
+=
+Programming question:
+
+Write a function called combine_dict(d0, d1)
+where d0 and d1 are two dictionaries with the same keys with different
+numbers. Return a new dictionary with the same keys
+with the value the combination of the two values attache to the same
+key in the two dictionaries
+
+
+Possible solution:
+def combine_dict(d0,d1):
+    nd = {}
+    for x in d0:
+        nd[x] = (d0[x] + d1[x])
+    return nd
+=======================
+=======================
+Question 6:
+by: 09/chen.michelle:
+
+=
+Programming question:
+
+Write a function top_performers(scores) that takes a dictionary scores as input, 
+where keys are student names and values are their test scores. 
+The function should return a list of the top performers (students with the highest scores). 
+If there are multiple students with the same highest score, 
+they should all be included in the list.
+
+Possible solution:
+def top_performers(scores):
+    max_score = max(scores.values())
+    top_students = [student for student, score in scores.items() if score == max_score]
+    return top_students
+
+# Example:
+scores = {
+    'Alice': 95,
+    'Bob': 87,
+    'Charlie': 95,
+    'David': 92,
+    'Eva': 89
+}
+Should return 'Top performers: ['Alice', 'Charlie']
+
+top_students = top_performers(scores)
+print("Top performers:", top_students)
+=======================
+=======================
+Question 8:
+by: 09/codner.justin:
+
+=
+Programming question:
+
+Create a function that takes in a list of words and then creates a dictionary which counts the first letter of each word:
+
+Possible solution:
+=======================
+=======================
+Question 9:
+by: 09/gao.sandra:
+
+=
+Programming question:
+
+Write a function word_count that takes a text file
+and returns the count of letters a-z and returns a dictionary in the format:
+
+{'a': 1, 'b': 1, ...}
+
+uppercase and lowercase letters should not be separate keys and
+numbers, symbols, and whitespace should not be counted
+
+Possible solution:
+=======================
+=======================
+Question 10:
+by: 09/hossain.shihab:
+
+=
+Programming question:
+Write a function called word_extract that extracts each individual WORD from the given string and prints them in separate substrings.
+
+Description:
+
+sentence = "I like turtles but I am vegan."
+
+Possible solution:
+def extract_words(sentence):
+    words = sentence.split()
+    return words
+
+=======================
+=======================
+Question 11:
+by: 09/hsieh.naomi:
+
+=
+Programming question:
+
+Given a string with 26 words with each word starting with a different letter of the alphabet (a-z) (not necessarilly all lowercase but will contain only letters & spaces) separated by spaces, return a string containing those words in lowercase & in alphabetical order separated by spaces.
+
+Ex:
+print(sort("azumarill MeLOETTa hoothoot dedenne feraligatr bergmite zygarde glaceon jellicent cubone turtonator litleo serperior nOCtOwl inteleon eevee POKEMON kecleon reshiram yveltal umbreon oranguru vespiqueN waiLMER xerneas quaxly"))
+SHOULD PRINT OUT:
+azumarill bergmite cubone dedenne eevee feraligatr glaceon hoothoot inteleon jellicent kecleon litleo meloetta noctowl oranguru pokemon quaxly reshiram serperior turtonator umbreon vespiquen wailmer xerneas yveltal zygarde
+
+Possible solution:
+=======================
+=======================
+Question 12:
+by: 09/hu.hugo:
+
+=
+Programming question:
+
+x = {1900: [3393, 4595, 2939, 4920], 2000: [96699, 12939, 39058, 69654]}
+
+For each pair in x, replace the value with the SUM of all the values in the list.
+
+Possible solution:
+=======================
+=======================
+Question 13:
+by: 09/huang.hangqi:
+
+=
+Programming question:
+
+Write a function that takes a string of English text and return a dictionary where the keys are the index of the word and the word is the value.
+
+Description:
+
+For example, dict('It is a wonderful morning') --> {0: 'It', 1: 'is', 2: 'a', 3: 'wonderful', 4: 'morning'}
+
+Possible solution:
+=======================
+=======================
+Question 14:
+by: 09/huang.matthew:
+
+=
+Programming question: Take two lists with the same length and make a dictionary such that the keys of the first list are the elements from the second, and vice versa.
+
+Description
+
+Possible solution:
+
+=======================
+=======================
+Question 16:
+by: 09/leahy.alexa:
+
+=
+Programming question:
+
+Description
+Using the join function, get the output I want ice cream and chocolate and cake and cookies. given the input x = ['ice cream' , 'chocolate' , 'cake' , 'cookies']   
+
+Possible solution:
+def join(x):
+    g = ' and '.join(x)
+    s = 'I want ' + g + '.'
+    print (s)
+    
+x = ['ice cream' , 'chocolate' , 'cake' , 'cookies']    
+=======================
+=======================
+Question 17:
+by: 09/mercone.lucia:
+
+=
+Programming question:
+Write a program that returns the index of any word in string s.
+
+Possible solution:
+def wordindex (s, index):
+    d = { }
+    a = s.split()
+    x = 0
+    for e in a:
+        if s.find (index) != -1:
+            d[str(e)] = x
+            x += 1
+    return d[index]
+
+s = 'how in the world?'
+print (wordindex (s, 'how'))
+=======================
+=======================
+Question 18:
+by: 09/mupparapu.mira:
+
+=
+Programming question:
+lower_case_values
+Description
+Takes two dictionaries of the same length and returns a dictionary with all the lower case values.
+Ex. print(lower_case_values({1:'a', 2: 'B', 3:'2'}, {4:'A', 5: 'b', 6:'c'})) --> {0:'a', 1:'b', 2:'c'}
+Possible solution:
+=======================
+=======================
+Question 19:
+by: 09/pan.jamie:
+
+=
+Programming question:
+Write a function that takes a sentence as a parameter and changes the periods into commas without using replace.
+
+Description
+
+Possible solution:
+
+=======================
+=======================
+Question 20:
+by: 09/pavlov.lucas:
+
+=
+Programming question:
+Write a function that takes in a dictionary with integer keys and values and returns the sum of the keys multiplied by values
+Description
+
+Possible solution:
+=======================
+=======================
+Question 21:
+by: 09/rong.yanghao:
+
+=
+Programming question:
+
+Write a function called newLine that takes a string and would create a string with every word starting on a new line.
+There should only be words and no punctuation is allowed except for ' in words like isn't.
+testData = "Aren't you supposed to-be prepping for this EXAM?"
+RESULT should be:
+Aren't
+you
+supposed
+to
+be
+prepping
+for
+this
+EXAM
+
+
+Possible solution:
+=======================
+=======================
+Question 22:
+by: 09/sunko.sam:
+
+=
+Programming question:
+
+Write a function that creates a dictionary of square roots of numbers from 1 to n, in the format:
+{1:'1', 2:'1.414'}
+
+Possible solution:
+=======================
+=======================
+Question 23:
+by: 09/tam.iris:
+
+=
+Programming question:
+
+Description
+x={1900: [3393,4595,2939,4920], 2000: [96699,12939,39058,69654]}
+For each key in x, replace the list value with the sum of all the elements in the list.
+
+Possible solution:
+=======================
+=======================
+Question 24:
+by: 09/vaca.ruby:
+
+=
+Programming question:
+
+Description
+
+Delete every single-digit number in any given list
+
+Possible solution:
+=======================
+=======================
+Question 25:
+by: 09/wang.kristy:
+
+=
+Programming question:
+
+Create a function that takes in a list of words and then creates a dictionary which counts the first letter of each word:
+
+Possible solution:
+=======================
+=======================
+Question 26:
+by: 09/wongthep.thanapol:
+
+=
+Programming question:
+Write a function that takes 2 dictionaries with the same length and returns a dictionary with lowercase letters as values from those two dictionaries
+The keys will be ordered from one.
+ex. print(lower_case_values({1: 'a', 2: 'B', 3: '2'}, {4:'A', 5: 'b', 6:'c'})) --> {0: 'a', 1: 'b', 2: 'c'}
+
+Possible solution:
+=======================
+=======================
+Question 27:
+by: 09/yang.derek:
+
+=
+Programming question:
+Given an string of 26 words seperated by spaces, each word beginning with a lowercase letter from a to z,
+return a string consisting of the 26 words seperated by spaces in alphabetical order.
+
+Possible solution:
+=======================
+=======================
+Question 28:
+by: 09/zhou.andy:
+
+=
+=======================
+Question 29:
+by: 09/zou.sarah:
+
+=
+Programming question:
+
+Write a function that squares all of the values
+in the dictionary
+
+Description:
+Do NOT create a new dictionary, instead, modify
+the original dictionary; the function should NOT
+include a return value 
+
+Possible solution:
+=======================
+=======================
+Question 31:
+by: 10/agge.maya:
+
+=
+Programming question: Remove ending punctuation from text
+
+Description
+Ending punctuation includes periods, exclamation marks, and question marks
+
+Possible solution:
+
+def remove_ending_punctuation (s) :
+    punctuation = .!?
+    for p in punctuation:
+        s = s. replace(p, ' ')
+    return s
+=======================
+=======================
+Question 32:
+by: 10/ashie.angelina:
+
+=
+Programming question: Remove ending punctuation from text
+
+Possible solution:
+def remove_ending_punctuation (s):
+    punctuation = .!?
+    for p in punctuation:
+        s = s.replace(p, ' ')
+    return s
+=======================
+=======================
+Question 34:
+by: 10/chae.nate:
+
+=
+Programming question:
+
+Write a function which takes in a list of numbers and returns
+a dictionary of the frequencies of even numbers in the list.
+
+Possible solution:
+=======================
+=======================
+Question 35:
+by: 10/chen.angelo:
+
+=
+Programming question:
+Write a program that will return a dictionary that has counts the amount of vowels in the following sentence:
+"Mike the monkey loves unripe apples"
+
+Description
+
+Possible solution:
+
+def mike(s):
+    vowels = 'aeiou'
+    c = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
+    s=s.lower()
+    for e in s:
+        if e in vowels:
+            c[e]+=1
+    return c
+    
+=======================
+=======================
+Question 36:
+by: 10/chen.catherine:
+
+=
+Programming question:
+
+Write a function that takes a list of random,
+non-repeating letters and numbers and returns
+a dictionary with letters as the keys and
+numbers as the values.
+Ex: ['h', 6, 'k', 'r', 5, 3] => {'h' : 6, 'k' : 5, 'r' : 3}
+Possible solution:
+=======================
+=======================
+Question 37:
+by: 10/chen.serena:
+
+=
+Programming question:
+Given a string s.
+Write a function numberify that returns all the numbers in the string as an integer.
+Description
+The given string may consist of numbers, alphabets, and punctuation.
+s = 'qs27sdfk!8674?'
+numberify(s) --> 278674
+Possible solution:
+=======================
+=======================
+Question 38:
+by: 10/chin.benjamin:
+
+=
+Programming question:
+Write a program that takes a text file string and returns a dictionary with words with the letter e as keys and the number of times the word appears in the file as the values
+
+Description
+
+Possible solution:
+=======================
+=======================
+Question 39:
+by: 10/cimpoiesu.alex:
+
+=
+Programming question:
+Write a function that changes the values to 'banana'.
+Description
+
+Possible solution:
+=======================
+=======================
+Question 40:
+by: 10/das.amrit:
+
+====================================================
+Programming question: Write a function, lineless, that would take a file, open and read
+it, and then format it so that there are no line breaks or grammar(in this case we can stick
+to commas only)
+
+Description: Take a file, open it, read it, format it so that there are no line breaks
+nor grammar. The returned object must be a string. g, the input, is a text file
+
+Possible solution:
+
+=============================================================================
+=======================
+Question 42:
+by: 10/hou.kenneth:
+
+=
+Programming question:
+With lists ['fish', 'dog', 'bird'], ['ocean', 'land', 'sky'] make
+{'fish': 'ocean', 'dog': 'land', 'bird': 'sky'}
+Description
+
+Possible solution:
+=======================
+=======================
+Question 43:
+by: 10/hu.brandon:
+
+=
+Programming question:
+
+Write a function that takes a list
+with a random assortment of letters and
+numbers and makes a dictionary with the
+keys as the letters as they occur
+and values as numbers as they occur.
+There will not necessarily be the same
+number of letters and numbers
+print(sort(['a','b',6,'h','i',2,5]))
+returns: {a: 6, b: 2, h: 5}
+
+Possible solution:
+=======================
+=======================
+Question 45:
+by: 10/lee.yuna:
+
+=
+Programming question: Return a string so that it does not contain i and is all lowercase:
+Description
+x = 'NeVer GoNnA GiVe yOu uP'
+
+
+Possible solution:
+def remove_string(s,i):
+    e = s.lower()
+    return e.replace(i)
+    
+    
+=======================
+=======================
+Question 46:
+by: 10/li.angelina:
+
+=
+Programming question:
+
+s = "hi my name is bob"
+Write a function to separate each word by a comma and a space instead of just a space.
+
+Possible solution:
+=======================
+=======================
+Question 47:
+by: 10/lin.gavin:
+
+=
+Programming question:
+Write a function that changes the values to 'banana'.
+Description
+
+Possible solution:
+=======================
+=======================
+Question 48:
+by: 10/lin.sean:
+
+=
+Programming question: Return a string so that it does not contain i and is all lowercase:
+Description
+x = 'NeVer GoNnA GiVe yOu uP'
+
+
+Possible solution:
+=======================
+=======================
+Question 49:
+by: 10/liu.evelyn:
+
+=
+Programming question:
+
+Given a string of words separated by spaces, return another
+string with the words seperated by a comma and then a space.
+
+Possible solution:
+=======================
+=======================
+Question 50:
+by: 10/liu.simon:
+
+=
+Programming question:
+Write a function that returns a dictionary counting the number of vowels in a string
+Description
+
+Possible solution:
+def vowel_count(s):
+    vowel_counts = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+    s = s.lower()
+    for x in s:
+        if x in vowel_counts:
+            vowel_counts[x]+= 1
+    return vowel_counts
+print(vowel_count('you should love yourself NOW!'))
+=======================
+=======================
+Question 52:
+by: 10/pisareva.sofia:
+
+=
+Programming question:
+given a list of lists of strings, g, split each string 
+with the delimiter as the first string in the list.
+Description
+
+Possible solution:
+=======================
+=======================
+Question 55:
+by: 10/shahab.navid:
+
+=
+Programming question: Write a function that takes a list with a random assortment
+of letters and numbers and makes a dictionary with the keys
+as the letters as they occur and values as numbers as they occur.
+There will not necessarily be the same number of letters
+numbers.
+print(sort(['a', 'b', 6, 'h', 'i', 2, 5]))
+returns: {a: 6, b: 2, h: 5}
+
+Description
+
+Possible solution:
+def sort(l):
+    letters = []
+    d = {}
+    i = 0
+    for char in l:
+        if str(char) >= 'a' and str(char) <= 'z':
+            letters.append(char)
+        else:
+            num.append(char)
+        print(letters,num)
+        if len(letters) < len(num):
+            letter = letters[:len(num)]
+            while i + 1 <= len(letters):
+                d[letters[i]] = num[i]
+                i += 1
+        else:
+            letter = letters[:len(num)]
+            while i + 1 <= len(letters):
+                d[letters[i]] = num[i]
+                i += 1
+        return d
+print(sort(['a', 'b', 6, 'h', 'i', 2, 5]))
+=======================
+=======================
+Question 56:
+by: 10/stahl.axel:
+
+=
+Programming question:
+
+Write a function that counts the number of spaces and newlines in all the values of the given dictionary.
+
+Possible solution:
+=======================
+=======================
+Question 57:
+by: 10/titievsky.leo:
+
+=
+Programming question:
+given a list of lists of strings, g, split each string 
+with the delimiter as the first string in the list.
+Description
+
+Possible solution:
+=======================
+=======================
+Question 58:
+by: 10/vaithilingam.aruna:
+
+=
+Programming question: Write a function that takes a list of number,
+turns into a dictionary where the key is the number and the value
+is the frequency. In the dictionary, remove the presence of the most frequent number.
+
+Description: Ex
+input: [1, 2, 2, 4, 5]
+output: [1, 4, 5]
+
+Possible solution:
+
+=======================
+=======================
+Question 60:
+by: 10/xiao.steven:
+
+=
+Programming question:
+
+make a function that counts numbers in alice.txt.
+Returns in in a dictionary.
+
+Possible solution:
+
+=======================
+=======================
+Question 61:
+by: 10/yarden.ben:
+
+=
+Programming question: make a program that finds the sum of a string of numbers that looks like "1 2 3 4 5"
+
+Description
+
+Possible solution:
+
+def spaced_sum(s):
+    s = (s.split())
+    s = list(map(int, s))
+    s = sum(s)
+    return s
+
+print(spaced_sum("1 2 3 4 5"))
+
+=======================
+=======================
+Question 62:
+by: 10/yee.estella:
+
+=
+Programming question:
+Given a string s.
+Write a function numberify that returns all the numbers in the string as an integer.
+Description
+The given string may consist of numbers, alphabets, and punctuation.
+s = 'qs27sdfk!8674?'
+numberify(s) --> 278674
+Possible solution:
+=======================
+=======================
+Question 63:
+by: 10/zheng.ricky:
+
+=
+Programming question: Return a string so that it does not contain i and is all lowercase:
+Description
+x = 'NeVer GoNnA GiVe yOu uP'
+
+
+Possible solution:
+def remove_string(s,i):
+    e = s.lower()
+    return e.replace(i)
+print(remove_string(x,'e'))
+    
+    
+=======================
